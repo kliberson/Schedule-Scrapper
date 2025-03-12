@@ -6,7 +6,7 @@ import csv
 import tempfile
 import requests
 
-OUTPUT_FILE = "dane.csv"
+OUTPUT_FILE = "data/dane.csv"
 LAST_UPDATE = "last_update.txt"
 INTERVAL = 1800  # 30 minut
 

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Zajęć</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Plan Zajęć</h1>
+        
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        
+        <div class="filter-form">
+            <h3>Filtruj dane</h3>
+            <form action="/filter" method="post">
+                <select name="filter_column">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" name="filter_value" placeholder="Wartość filtra">
+                <button type="submit">Filtruj</button>
+            </form>
+            <button onclick="location.href='/'">Resetuj filtry</button>
+        </div>
+        
+        {% if filter_applied %}
+        <div class="filter-info">
+            <p>Zastosowano filtr: {{ filter_applied }}</p>
+        </div>
+        {% endif %}
+        
+        <div class="schedule-table">
+            <table>
+                <thead>
+                    <tr>
+                        {% for column in columns %}
+                        <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data %}
+                    <tr>
+                        {% for cell in row %}
+                        <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+    

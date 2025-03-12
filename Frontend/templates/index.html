@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Zajęć</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikacja do wyświetlania planu zajęć</h1>
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        <div class="upload-form">
+            <h2>Wgraj plik CSV z planem zajęć</h2>
+            <form action="/schedule" method="post" enctype="multipart/form-data">
+                <input type="file" name="csv_file" accept=".csv">
+                <button type="submit">Wczytaj plan</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+    
