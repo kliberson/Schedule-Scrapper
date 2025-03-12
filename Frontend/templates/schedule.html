@@ -18,20 +18,40 @@
         <div class="filter-form">
             <h3>Filtruj dane</h3>
             <form action="/filter" method="post">
-                <select name="filter_column">
-                    {% for column in columns %}
-                    <option value="{{ column }}">{{ column }}</option>
-                    {% endfor %}
-                </select>
-                <input type="text" name="filter_value" placeholder="Wartość filtra">
-                <button type="submit">Filtruj</button>
+                <div class="form-group">
+                    <label for="filter_mode">Tryb studiów:</label>
+                    <select name="filter_mode" id="filter_mode">
+                        <option value="all">Wszystkie</option>
+                        <option value="Stacjonarne">Stacjonarne</option>
+                        <option value="Zaoczne">Zaoczne</option>
+                        <option value="Nieokreślony">Nieokreślony</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="filter_column">Kolumna:</label>
+                    <select name="filter_column" id="filter_column">
+                        {% for column in columns %}
+                        <option value="{{ column }}">{{ column }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="filter_value">Wartość:</label>
+                    <input type="text" name="filter_value" id="filter_value" placeholder="Wpisz wartość">
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit">Filtruj</button>
+                    <button type="button" onclick="location.href='/'">Resetuj filtry</button>
+                </div>
             </form>
-            <button onclick="location.href='/'">Resetuj filtry</button>
         </div>
         
         {% if filter_applied %}
         <div class="filter-info">
-            <p>Zastosowano filtr: {{ filter_applied }}</p>
+            <p>Zastosowano filtry: {{ filter_applied }}</p>
         </div>
         {% endif %}
         

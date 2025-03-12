@@ -67,7 +67,8 @@ def przetworz_plan(plan):
       - Bloki zawierające informacje o przedmiotach,
         z których pobierany jest kod przedmiotu, typ zajęć oraz kierunek (major)
       - Na podstawie legendy ustalana jest pełna nazwa przedmiotu (Subject)
-    Zwraca listę rekordów, gdzie każdy rekord to lista: [Major, Subject, Type, Teacher].
+      - Rodzaj studiów (stacjonarne/zaoczne) na podstawie zawartości bloku
+    Zwraca listę rekordów, gdzie każdy rekord to lista: [Major, Subject, Type, Teacher, Mode].
     """
     # Wyciągnięcie nazwy nauczyciela
     teacher_match = re.search(r"Plan zajęć - (.*),\s*tydzień", plan)
@@ -111,20 +112,31 @@ def przetworz_plan(plan):
             if course_name_match:
                 course_name = course_name_match.group(1).strip()
         
-        records.append([major, course_name, course_type, teacher_name])
+        # Ustalenie rodzaju studiów (stacjonarne/zaoczne)
+        mode = "Nieokreślony"
+        # Sprawdzamy czy w bloku występuje informacja o trybie studiów
+        if "stacjonarne" in block.lower():
+            mode = "Stacjonarne"
+        elif "zaoczne" in block.lower() or "niestacjonarne" in block.lower():
+            mode = "Zaoczne"
+        
+        records.append([major, course_name, course_type, teacher_name, mode])
     return records
 
 def zapisz_dane(dane, current_date):
     """
     Zapisuje dane do pliku CSV.
-    Dane zapisywane są w kolejności: [Major, Subject, Type, Teacher],
+    Dane zapisywane są w kolejności: [Major, Subject, Type, Teacher, Mode],
     a przed zapisem usuwane są duplikaty.
     """
     try:
+        # Upewnij się, że katalog istnieje
+        os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+        
         # Zapisujemy do pliku tymczasowego
         with tempfile.NamedTemporaryFile("w", delete=False, newline='', encoding="utf-8") as temp_file:
             writer = csv.writer(temp_file)
-            writer.writerow(["Major", "Subject", "Type", "Teacher"])
+            writer.writerow(["Major", "Subject", "Type", "Teacher", "Mode"])
             # Usuwamy duplikaty poprzez konwersję na zbiór krotek
             unique_rows = {tuple(row) for row in dane}
             sorted_rows = sorted(unique_rows)

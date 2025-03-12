@@ -35,22 +35,38 @@ def index():
 def filter_schedule():
     filter_column = request.form.get('filter_column')
     filter_value = request.form.get('filter_value')
+    filter_mode = request.form.get('filter_mode', 'all')
     
     df = load_schedule_data()
     if df.empty:
         return render_template('error.html', error="Nie można wczytać pliku z planem zajęć")
     
-    if filter_column in df.columns:
+    # Filtrowanie według trybu studiów, jeśli nie wybrano "wszystkie"
+    if filter_mode != 'all' and 'Mode' in df.columns:
+        df = df[df['Mode'] == filter_mode]
+    
+    # Filtrowanie według wartości w wybranej kolumnie
+    if filter_column in df.columns and filter_value:
         filtered_df = df[df[filter_column].astype(str).str.contains(filter_value, case=False)]
+        
+        applied_filters = []
+        if filter_mode != 'all':
+            applied_filters.append(f"Tryb: {filter_mode}")
+        if filter_value:
+            applied_filters.append(f"{filter_column}: {filter_value}")
+            
+        filter_info = ", ".join(applied_filters) if applied_filters else ""
+        
         return render_template('schedule.html', 
                               columns=filtered_df.columns.tolist(),
                               data=filtered_df.values.tolist(),
-                              filter_applied=f"{filter_column}: {filter_value}")
+                              filter_applied=filter_info)
     
     return render_template('schedule.html', 
                           columns=df.columns.tolist(),
                           data=df.values.tolist(),
-                          error="Nieprawidłowa kolumna do filtrowania")
+                          filter_applied="Tryb: " + filter_mode if filter_mode != 'all' else None,
+                          error="Nieprawidłowa kolumna do filtrowania" if filter_value else None)
 
 # Stwórz pliki szablonów
 def create_template_files():
@@ -68,7 +84,7 @@ def create_template_files():
     <div class="container">
         <h1>Błąd</h1>
         <div class="error">{{ error }}</div>
-        <p>Sprawdź czy plik CSV istnieje w lokalizacji: Schedule-Scrapper/Scrapper/data/dane.csv</p>
+        <p>Sprawdź czy plik CSV istnieje w lokalizacji: ../Scrapper/data/dane.csv</p>
     </div>
 </body>
 </html>
@@ -95,20 +111,40 @@ def create_template_files():
         <div class="filter-form">
             <h3>Filtruj dane</h3>
             <form action="/filter" method="post">
-                <select name="filter_column">
-                    {% for column in columns %}
-                    <option value="{{ column }}">{{ column }}</option>
-                    {% endfor %}
-                </select>
-                <input type="text" name="filter_value" placeholder="Wartość filtra">
-                <button type="submit">Filtruj</button>
+                <div class="form-group">
+                    <label for="filter_mode">Tryb studiów:</label>
+                    <select name="filter_mode" id="filter_mode">
+                        <option value="all">Wszystkie</option>
+                        <option value="Stacjonarne">Stacjonarne</option>
+                        <option value="Zaoczne">Zaoczne</option>
+                        <option value="Nieokreślony">Nieokreślony</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="filter_column">Kolumna:</label>
+                    <select name="filter_column" id="filter_column">
+                        {% for column in columns %}
+                        <option value="{{ column }}">{{ column }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="filter_value">Wartość:</label>
+                    <input type="text" name="filter_value" id="filter_value" placeholder="Wpisz wartość">
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit">Filtruj</button>
+                    <button type="button" onclick="location.href='/'">Resetuj filtry</button>
+                </div>
             </form>
-            <button onclick="location.href='/'">Resetuj filtry</button>
         </div>
         
         {% if filter_applied %}
         <div class="filter-info">
-            <p>Zastosowano filtr: {{ filter_applied }}</p>
+            <p>Zastosowano filtry: {{ filter_applied }}</p>
         </div>
         {% endif %}
         
@@ -182,9 +218,25 @@ h3 {
 
 form {
     display: flex;
-    gap: 10px;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
 }
 
 input, select, button {
@@ -193,11 +245,16 @@ input, select, button {
     border-radius: 4px;
 }
 
+select {
+    min-width: 150px;
+}
+
 button {
     background-color: #3498db;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 8px 15px;
 }
 
 button:hover {
@@ -256,6 +313,10 @@ tr:hover {
         align-items: stretch;
     }
     
+    .form-buttons {
+        flex-direction: column;
+    }
+    
     th, td {
         padding: 8px;
         font-size: 14px;
@@ -281,6 +342,7 @@ if __name__ == '__main__':
     if not os.path.exists(CSV_PATH):
         print(f"UWAGA: Plik CSV nie istnieje w ścieżce: {CSV_PATH}")
         print(f"Aplikacja zostanie uruchomiona, ale będzie wyświetlać błąd do czasu utworzenia pliku.")
+        print(f"Upewnij się, że ścieżka {os.path.abspath(CSV_PATH)} jest poprawna.")
     
     # Uruchom aplikację Flaska
     app.run(debug=True, host='0.0.0.0', port=5000)
