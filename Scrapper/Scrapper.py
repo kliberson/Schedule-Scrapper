@@ -103,7 +103,8 @@ def przetworz_plan(plan):
         if not major_match:
             continue
         major = major_match.group(1).strip()
-        
+        if "erasmus" in major.lower():
+            continue
         # Ustalenie pełnej nazwy przedmiotu na podstawie legendy
         course_name = course_code  # domyślnie używamy kodu
         if legend:
@@ -113,13 +114,17 @@ def przetworz_plan(plan):
                 course_name = course_name_match.group(1).strip()
         
         # Ustalenie rodzaju studiów (stacjonarne/zaoczne)
+       # Ustalenie rodzaju studiów (stacjonarne/zaoczne)
         mode = "Nieokreślony"
-        # Sprawdzamy czy w bloku występuje informacja o trybie studiów
-        if "stacjonarne" in block.lower():
+        block_lower = block.lower()
+
+        # Sprawdzamy najpierw bardziej szczegółowe wzorce
+        if "niestacjonarne wieczorowe" in block_lower or "nw parzyste" in block_lower or "nz parzyste" in block_lower:
+            mode = "Niestacjonarne Wieczorowe"
+        elif "s parzyste" in block_lower or "stacjonarne" in block_lower:
             mode = "Stacjonarne"
-        elif "zaoczne" in block.lower() or "niestacjonarne" in block.lower():
-            mode = "Zaoczne"
-        
+        else:
+            mode = "Niestacjonarne"
         records.append([major, course_name, course_type, teacher_name, mode])
     return records
 

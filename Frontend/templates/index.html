@@ -13,13 +13,6 @@
         {% if error %}
         <div class="error">{{ error }}</div>
         {% endif %}
-        <div class="upload-form">
-            <h2>Wgraj plik CSV z planem zajęć</h2>
-            <form action="/schedule" method="post" enctype="multipart/form-data">
-                <input type="file" name="csv_file" accept=".csv">
-                <button type="submit">Wczytaj plan</button>
-            </form>
-        </div>
     </div>
 </body>
 </html>

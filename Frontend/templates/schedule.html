@@ -6,6 +6,73 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Pobierz elementy formularza
+            const columnSelect = document.getElementById('filter_column');
+            const valueSelect = document.getElementById('filter_value');
+            
+            // Funkcja do aktualizacji listy wartości na podstawie wybranej kolumny
+            function updateValueOptions() {
+                const selectedColumn = columnSelect.value;
+                
+                // Wyczyść listę wartości
+                valueSelect.innerHTML = '';
+                
+                // Dodaj opcję "Wybierz wartość"
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.textContent = 'Wybierz wartość';
+                valueSelect.appendChild(defaultOption);
+                
+                // Pobierz unikalne wartości dla wybranej kolumny z serwera
+                fetch(`/get_values/${selectedColumn}`)
+                    .then(response => response.json())
+                    .then(values => {
+                        values.forEach(value => {
+                            const option = document.createElement('option');
+                            option.value = value;
+                            option.textContent = value;
+                            
+                            // Ustaw wybraną wartość jeśli istnieje
+                            if (value === '{{ selected_value }}' && selectedColumn === '{{ selected_column }}') {
+                                option.selected = true;
+                            }
+                            
+                            valueSelect.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error('Błąd pobierania wartości:', error));
+            }
+            
+            // Dodaj nasłuchiwanie zmiany kolumny
+            columnSelect.addEventListener('change', updateValueOptions);
+            
+            // Ustaw wybraną kolumnę jeśli istnieje
+            if ('{{ selected_column }}') {
+                for (let i = 0; i < columnSelect.options.length; i++) {
+                    if (columnSelect.options[i].value === '{{ selected_column }}') {
+                        columnSelect.options[i].selected = true;
+                        break;
+                    }
+                }
+            }
+            
+            // Ustaw tryb studiów jeśli istnieje
+            const modeSelect = document.getElementById('filter_mode');
+            if ('{{ selected_mode }}') {
+                for (let i = 0; i < modeSelect.options.length; i++) {
+                    if (modeSelect.options[i].value === '{{ selected_mode }}') {
+                        modeSelect.options[i].selected = true;
+                        break;
+                    }
+                }
+            }
+            
+            // Załaduj początkowe wartości dla wybranej kolumny
+            updateValueOptions();
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -23,23 +90,27 @@
                     <select name="filter_mode" id="filter_mode">
                         <option value="all">Wszystkie</option>
                         <option value="Stacjonarne">Stacjonarne</option>
-                        <option value="Zaoczne">Zaoczne</option>
-                        <option value="Nieokreślony">Nieokreślony</option>
+                        <option value="Niestacjonarne">Niestacjonarne</option>
+                        <option value="Niestacjonarne Wieczorowe">Niestacjonarne Wieczorowe</option>
+                        <!-- <option value="Nieokreślony">Nieokreślony</option> -->
                     </select>
                 </div>
                 
                 <div class="form-group">
                     <label for="filter_column">Kolumna:</label>
                     <select name="filter_column" id="filter_column">
-                        {% for column in columns %}
-                        <option value="{{ column }}">{{ column }}</option>
+                        {% for column in filter_columns %}
+                        <option value="{{ column }}" {% if column == selected_column %}selected{% endif %}>{{ column }}</option>
                         {% endfor %}
                     </select>
                 </div>
                 
                 <div class="form-group">
                     <label for="filter_value">Wartość:</label>
-                    <input type="text" name="filter_value" id="filter_value" placeholder="Wpisz wartość">
+                    <select name="filter_value" id="filter_value">
+                        <option value="">Wybierz wartość</option>
+                        <!-- Opcje będą wypełniane przez JavaScript -->
+                    </select>
                 </div>
                 
                 <div class="form-buttons">
