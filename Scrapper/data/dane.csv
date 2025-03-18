@@ -1,31 +1,48 @@
 Major,Subject,Type,Teacher,Mode
 AiR,Algorytmy optymalizacji,lab,dr inż. Jerzy Marszałek,Niestacjonarne Wieczorowe
+AiR,Algorytmy optymalizacji,wyk,dr inż. Jerzy Marszałek,Niestacjonarne Wieczorowe
 AiR,Analiza matematyczna II,wyk,dr Bartosz Micherda,Niestacjonarne Wieczorowe
 AiR,Analiza matematyczna II,wyk,dr Bartosz Micherda,Stacjonarne
 AiR,Analiza matematyczna II,ćw,dr Bartosz Micherda,Niestacjonarne Wieczorowe
 AiR,Analiza matematyczna II,ćw,dr Bartosz Micherda,Stacjonarne
+AiR,Dynamika robotów,wyk,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne Wieczorowe
 AiR,Dynamika robotów,ćw,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne Wieczorowe
+AiR,Elektronika,lab,mgr inż. Damian Pytka,Niestacjonarne Wieczorowe
 AiR,Elektronika,lab,mgr inż. Damian Pytka,Stacjonarne
+AiR,Elektronika,wyk,mgr inż. Andrzej Masny,Niestacjonarne Wieczorowe
+AiR,Elektronika,wyk,mgr inż. Andrzej Masny,Stacjonarne
+AiR,Elektronika,ćw,mgr inż. Damian Pytka,Niestacjonarne Wieczorowe
 AiR,Elektronika,ćw,mgr inż. Damian Pytka,Stacjonarne
 AiR,Identyfikacja procesów automatyki,wyk,dr inż. Arkadiusz Trąbka,Niestacjonarne Wieczorowe
 AiR,Identyfikacja procesów automatyki,ćw,dr inż. Arkadiusz Trąbka,Niestacjonarne Wieczorowe
 AiR,Języki programowania robotów,lab,dr inż. Arkadiusz Trąbka,Stacjonarne
+AiR,Komputerowe projektowanie zrobotyzowanych stanowisk pracy,proj,mgr inż. Paweł Błaszczak,Niestacjonarne Wieczorowe
 AiR,Komputerowe projektowanie zrobotyzowanych stanowisk pracy,wyk,mgr inż. Paweł Błaszczak,Niestacjonarne Wieczorowe
 AiR,Komputerowe projektowanie zrobotyzowanych stanowisk pracy I,proj,mgr inż. Paweł Błaszczak,Stacjonarne
+AiR,Komputerowe projektowanie zrobotyzowanych stanowisk pracy I,wyk,mgr inż. Paweł Błaszczak,Stacjonarne
 AiR,Komputerowe wspomaganie syntezy układów automatyki,lab,mgr inż. Marcin Pawlik,Niestacjonarne Wieczorowe
+AiR,Komunikacja społeczna,wyk,prof. UBB dr hab. inż. Izabela Kutschenreiter-Praszkiewicz,Niestacjonarne Wieczorowe
 AiR,Materiałoznawstwo,lab,dr inż. Wojciech Skotnicki,Niestacjonarne Wieczorowe
 AiR,Materiałoznawstwo,wyk,dr inż. Wojciech Skotnicki,Niestacjonarne Wieczorowe
 AiR,Mechanika płynów,lab,mgr inż. Mateusz Śliwka,Niestacjonarne Wieczorowe
+AiR,Mechanika płynów,wyk,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
 AiR,Mechatronika,lab,mgr inż. Adam Jabłoński,Niestacjonarne Wieczorowe
+AiR,Mechatronika,wyk,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
 AiR,Monitoring w przemyśle,lab,mgr inż. Ewa Bebek,Stacjonarne
 AiR,Monitoring w przemyśle,wyk,mgr inż. Ewa Bebek,Stacjonarne
+AiR,Napędy i programowanie robotów,lab,mgr inż. Adam Jabłoński,Stacjonarne
 AiR,Napędy i programowanie robotów,wyk,dr inż. Arkadiusz Trąbka,Stacjonarne
 AiR,Obrabiarki sterowane numerycznie,lab,mgr inż. Kamil Wyrobek,Niestacjonarne Wieczorowe
 AiR,Obrabiarki sterowane numerycznie,lab,mgr inż. Kamil Wyrobek,Stacjonarne
 AiR,Obrabiarki sterowane numerycznie,wyk,mgr inż. Kamil Wyrobek,Niestacjonarne Wieczorowe
+AiR,Obrabiarki sterowane numerycznie,wyk,mgr inż. Kamil Wyrobek,Stacjonarne
+AiR,Ochrona własności intelektualnej,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne Wieczorowe
 AiR,Podstawy CAD,proj,prof. UBB dr hab. inż. Ireneusz Wróbel,Niestacjonarne Wieczorowe
 AiR,Podstawy architektury komputerów,lab,dr inż. Krzysztof Sikora,Stacjonarne
+AiR,Podstawy architektury komputerów,wyk,dr inż. Krzysztof Sikora,Stacjonarne
 AiR,Podstawy konstrukcji maszyn,proj,dr inż. Krzysztof Augustynek,Niestacjonarne Wieczorowe
+AiR,Podstawy konstrukcji maszyn,wyk,dr inż. Jacek Rysiński,Niestacjonarne Wieczorowe
+AiR,Podstawy mechaniki II,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Niestacjonarne Wieczorowe
 AiR,Podstawy mechaniki II,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Stacjonarne
 AiR,Podstawy mechaniki II,ćw,dr inż. Krzysztof Kubas,Niestacjonarne Wieczorowe
 AiR,Podstawy mechaniki II,ćw,dr inż. Krzysztof Kubas,Stacjonarne
@@ -35,6 +52,7 @@ AiR,Podstawy napędu elektrycznego,ćw,dr inż. Aleksander Patyk,Stacjonarne
 AiR,Podstawy programowania,lab,dr inż. Krzysztof Kubas,Niestacjonarne Wieczorowe
 AiR,Podstawy programowania,lab,dr inż. Krzysztof Kubas,Stacjonarne
 AiR,Podstawy programowania,wyk,dr inż. Krzysztof Kubas,Niestacjonarne Wieczorowe
+AiR,Podstawy programowania,wyk,dr inż. Krzysztof Kubas,Stacjonarne
 AiR,Podstawy robotyki II,wyk,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
 AiR,Podstawy robotyki II,wyk,dr inż. Jerzy Kopeć,Stacjonarne
 AiR,Podstawy robotyki II,ćw,mgr inż. Adam Jabłoński,Niestacjonarne Wieczorowe
@@ -50,73 +68,106 @@ AiR,Podstawy teorii sygnałów i systemów,lab,mgr inż. Marcin Pawlik,Niestacjo
 AiR,Podstawy teorii sygnałów i systemów,wyk,dr inż. Jarosław Janusz,Niestacjonarne Wieczorowe
 AiR,Podstawy teorii sygnałów i systemów,wyk,dr inż. Jarosław Janusz,Stacjonarne
 AiR,Podstawy teorii sygnałów i systemów,ćw,dr inż. Jarosław Janusz,Niestacjonarne Wieczorowe
+AiR,Podstawy teorii sygnałów i systemów,ćw,dr inż. Jarosław Janusz,Stacjonarne
+AiR,Programowanie obrabiarek sterowanych numerycznie,proj,mgr inż. Kamil Wyrobek,Niestacjonarne Wieczorowe
 AiR,Programowanie obrabiarek sterowanych numerycznie,proj,mgr inż. Kamil Wyrobek,Stacjonarne
+AiR,Programowanie obrabiarek sterowanych numerycznie,wyk,mgr inż. Kamil Wyrobek,Niestacjonarne Wieczorowe
 AiR,Programowanie obrabiarek sterowanych numerycznie,wyk,mgr inż. Kamil Wyrobek,Stacjonarne
 AiR,Programowanie robotów,lab,mgr inż. Paweł Błaszczak,Niestacjonarne Wieczorowe
 AiR,Projektowanie elementów automatyki,proj,dr inż. Marcin Sidzina,Stacjonarne
 AiR,Roboty w wytwarzaniu maszyn,lab,mgr inż. Paweł Błaszczak,Niestacjonarne Wieczorowe
+AiR,Roboty w wytwarzaniu maszyn,wyk,dr inż. Piotr Zyzak,Niestacjonarne Wieczorowe
 AiR,Seminarium dyplomowe I,sem,prof. UBB dr hab. inż. Jacek Kłosiński,Stacjonarne
 AiR,Seminarium dyplomowe II,sem,prof. UBB dr hab. inż. Jacek Kłosiński,Niestacjonarne Wieczorowe
+AiR,Sieci neuronowe w automatyce,wyk,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
 AiR,Sieci neuronowe w automatyce,ćw,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
 AiR,Statystyka i probabilistyka,wyk,dr Mirosław Adamek,Stacjonarne
 AiR,Statystyka i probabilistyka,ćw,dr Mirosław Adamek,Stacjonarne
 AiR,Sterowanie procesami ciągłymi,wyk,prof. UBB dr hab. inż. Jacek Kłosiński,Stacjonarne
+AiR,Sterowanie procesami ciągłymi,ćw,mgr inż. Adam Jabłoński,Stacjonarne
 AiR,Sterowanie sekwencyjne,lab,mgr inż. Ewa Bebek,Niestacjonarne Wieczorowe
 AiR,Systemy czasu rzeczywistego,lab,dr inż. Marcin Sidzina,Stacjonarne
 AiR,Systemy czasu rzeczywistego,lab,mgr inż. Marcin Pawlik,Stacjonarne
+AiR,Systemy czasu rzeczywistego,wyk,dr inż. Marcin Sidzina,Stacjonarne
 AiR,Technika cyfrowa i mikroprocesorowa,lab,dr inż. Krzysztof Kajstura,Stacjonarne
+AiR,Technika cyfrowa i mikroprocesorowa,wyk,dr inż. Krzysztof Kajstura,Stacjonarne
 AiR,Techniki wytwarzania I,lab,dr inż. Aleksandra Jarco,Stacjonarne
 AiR,Techniki wytwarzania I,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
+AiR,Termodynamika i termokinetyka,wyk,prof. UBB dr hab. inż. Andrzej Sucheta,Niestacjonarne Wieczorowe
 AiR,Termodynamika i termokinetyka,wyk,prof. UBB dr hab. inż. Andrzej Sucheta,Stacjonarne
+AiR,Termodynamika i termokinetyka,ćw,prof. UBB dr hab. inż. Andrzej Sucheta,Niestacjonarne Wieczorowe
 AiR,Termodynamika i termokinetyka,ćw,prof. UBB dr hab. inż. Andrzej Sucheta,Stacjonarne
 AiR,Układy przełączające,lab,mgr inż. Marcin Pawlik,Stacjonarne
 AiR,Układy przełączające,wyk,mgr inż. Ewa Bebek,Stacjonarne
+AiR,Wytrzymałość materiałów I,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Niestacjonarne Wieczorowe
 AiR,Wytrzymałość materiałów I,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Stacjonarne
+AiR,Wytrzymałość materiałów I,ćw,mgr inż. Mateusz Śliwka,Stacjonarne
+AiR,Wytrzymałość materiałów I,ćw,prof. UBB dr hab. inż. Dorota Pawlus,Niestacjonarne Wieczorowe
+AiR,Zarządzanie przedsiębiorstwem,wyk,dr inż. Piotr Zyzak,Niestacjonarne Wieczorowe
 AiR,Zastosowanie technik komputerowych w mechanice,lab,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne Wieczorowe
+Analit,Podstawy rachunkowości,wyk,dr inż. Dorota Więcek,Niestacjonarne
 Analit,Podstawy rachunkowości,wyk,dr inż. Dorota Więcek,Stacjonarne
 Analit,Podstawy rachunkowości,ćw,mgr inż. Ewa Kaczmar-Kolny,Niestacjonarne
 Analit,Podstawy rachunkowości,ćw,mgr inż. Ewa Kaczmar-Kolny,Stacjonarne
 Bud,Matematyka,ćw,mgr inż. Dorota Śliwińska,Stacjonarne
+Bud,Matematyka 2,ćw,dr Tomasz Zgraja,Niestacjonarne
+Bud,Mechanika budowli 2,proj,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne
 Bud,Mechanika budowli 2,proj,prof. UBB dr hab. inż. Andrzej Urbaś,Stacjonarne
+Bud,Mechanika budowli 2,wyk,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne
 Bud,Mechanika budowli 2,wyk,prof. UBB dr hab. inż. Andrzej Urbaś,Stacjonarne
+Bud,Teoria sprężystości i plastyczności,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Niestacjonarne
 Bud,Teoria sprężystości i plastyczności,ćw,prof. UBB dr hab. inż. Andrzej Harlecki,Niestacjonarne
 Bud,Zaawansowana matematyka,wyk,dr Tomasz Zgraja,Stacjonarne
 Bud,Zaawansowana matematyka,ćw,dr Tomasz Zgraja,Niestacjonarne
 EP,Badania i diagnostyka pojazdów,lab,dr inż. Henryk Wnęk,Niestacjonarne Wieczorowe
 EP,Badania i diagnostyka pojazdów,lab,dr inż. Henryk Wnęk,Stacjonarne
+EP,Badania i diagnostyka pojazdów,lab,mgr inż. Michał Brzozowski,Niestacjonarne Wieczorowe
 EP,Badania i diagnostyka pojazdów,lab,mgr inż. Michał Brzozowski,Stacjonarne
+EP,Badania i diagnostyka pojazdów,wyk,dr inż. Henryk Wnęk,Niestacjonarne Wieczorowe
 EP,Badania i diagnostyka pojazdów,wyk,dr inż. Henryk Wnęk,Stacjonarne
 EP,Badania i diagnostyka silników,lab,mgr inż. Kacper Cieślar,Stacjonarne
 EP,Badania i diagnostyka silników,lab,prof. UBB dr hab. inż. Dariusz Pietras,Niestacjonarne Wieczorowe
 EP,Badania i diagnostyka silników,lab,prof. UBB dr hab. inż. Dariusz Pietras,Stacjonarne
 EP,Badania i diagnostyka silników,lab,prof. UBB dr hab. inż. Tomasz Knefel,Niestacjonarne Wieczorowe
 EP,Badania i diagnostyka silników,lab,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
+EP,Badania i diagnostyka silników,wyk,prof. UBB dr hab. inż. Dariusz Pietras,Niestacjonarne Wieczorowe
 EP,Badania i diagnostyka silników,wyk,prof. UBB dr hab. inż. Dariusz Pietras,Stacjonarne
 EP,Budowa i eksploatacja pojazdów I,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne Wieczorowe
 EP,Budowa i eksploatacja pojazdów I,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Stacjonarne
 EP,Budowa i eksploatacja pojazdów I,ćw,mgr inż. Kacper Cieślar,Niestacjonarne Wieczorowe
+EP,Budowa i eksploatacja pojazdów I,ćw,mgr inż. Kacper Cieślar,Stacjonarne
+EP,Budowa i eksploatacja silników I,wyk,prof. UBB dr hab. inż. Jacek Nowakowski,Niestacjonarne Wieczorowe
 EP,Budowa i eksploatacja silników I,wyk,prof. UBB dr hab. inż. Jacek Nowakowski,Stacjonarne
-EP,Eitnm(10.5godz.),lab,mgr inż. Kacper Cieślar,Niestacjonarne Wieczorowe
-EP,Eitnm(4,5godz.),prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne Wieczorowe
-EP,Eitnm(4,5godz.),prof. UBB dr hab. inż. Tomasz Knefel,Niestacjonarne Wieczorowe
+EP,Budowa i eksploatacja silników I,ćw,mgr inż. Kacper Cieślar,Niestacjonarne Wieczorowe
+EP,Budowa i eksploatacja silników I,ćw,mgr inż. Kacper Cieślar,Stacjonarne
 EP,Ekologia i recykling pojazdów,wyk,prof. UBB dr hab. inż. Dariusz Pietras,Niestacjonarne Wieczorowe
 EP,Ekologia i recykling pojazdów,wyk,prof. UBB dr hab. inż. Dariusz Pietras,Stacjonarne
 EP,Eksploatacja i technologia napraw maszyn,lab,mgr inż. Kacper Cieślar,Stacjonarne
+EP,Eksploatacja i technologia napraw maszyn,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Stacjonarne
+EP,Eksploatacja i technologia napraw maszyn,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
 EP,Matematyka inżynierska II,wyk,dr Tomasz Zgraja,Niestacjonarne Wieczorowe
 EP,Matematyka inżynierska II,wyk,prof. UBB dr hab. Szymon Wąsowicz,Stacjonarne
 EP,Matematyka inżynierska II,ćw,mgr inż. Dorota Śliwińska,Niestacjonarne Wieczorowe
 EP,Matematyka inżynierska II,ćw,prof. UBB dr hab. Szymon Wąsowicz,Stacjonarne
 EP,Materiały i tworzywa sztuczne w budowie pojazdów,wyk,prof. UBB dr hab. inż. Izabella Rajzer,Stacjonarne
+EP,Mechanika płynów II,lab,mgr inż. Mateusz Śliwka,Niestacjonarne Wieczorowe
+EP,Mechanika płynów II,lab,mgr inż. Mateusz Śliwka,Stacjonarne
+EP,Mechanika techniczna II,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Niestacjonarne Wieczorowe
 EP,Mechanika techniczna II,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Stacjonarne
 EP,Mechanika techniczna II,ćw,dr inż. Krzysztof Kubas,Niestacjonarne Wieczorowe
 EP,Mechanika techniczna II,ćw,dr inż. Krzysztof Kubas,Stacjonarne
+EP,Mechatronika w pojazdach,lab,dr inż. Henryk Wnęk,Stacjonarne
+EP,Mechatronika w pojazdach,wyk,dr inż. Henryk Wnęk,Stacjonarne
 EP,Metrologia,lab,mgr inż. Izabela Hura,Stacjonarne
 EP,Ochrona własności intelektualnych,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Niestacjonarne Wieczorowe
+EP,Ochrona własności intelektualnych,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
+EP,Odlewnictwo i obróbka plastyczna,lab,dr inż. Aleksandra Jarco,Niestacjonarne Wieczorowe
 EP,Odlewnictwo i obróbka plastyczna,lab,dr inż. Aleksandra Jarco,Stacjonarne
 EP,Odlewnictwo i obróbka plastyczna,wyk,prof. UBB dr hab. inż. Jacek Pezda,Niestacjonarne Wieczorowe
 EP,Odlewnictwo i obróbka plastyczna,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
 EP,Podstawy CAD i modelowanie 3D,lab,dr inż. Jerzy Marszałek,Niestacjonarne Wieczorowe
 EP,Podstawy CAD i modelowanie 3D,lab,dr inż. Piotr Danielczyk,Stacjonarne
+EP,Podstawy dynamiki maszyn,lab,dr inż. Krzysztof Kubas,Stacjonarne
 EP,Podstawy dynamiki maszyn,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Stacjonarne
 EP,Podstawy elektrotechniki i elektroniki,lab,dr inż. Daniel Jancarczyk,Niestacjonarne Wieczorowe
 EP,Podstawy elektrotechniki i elektroniki,wyk,mgr inż. Andrzej Masny,Stacjonarne
@@ -124,6 +175,8 @@ EP,Podstawy elektrotechniki i elektroniki,ćw,mgr inż. Andrzej Masny,Stacjonarn
 EP,Podstawy konstrukcji maszyn II,proj,dr inż. Marek Praszkiewicz,Niestacjonarne Wieczorowe
 EP,Podstawy konstrukcji maszyn II,proj,dr inż. Marek Praszkiewicz,Stacjonarne
 EP,Podstawy rekonstrukcji wypadków drogowych,lab,prof. UBB dr hab. inż. Krzysztof Parczewski,Stacjonarne
+EP,Podstawy rekonstrukcji wypadków drogowych,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Stacjonarne
+EP,Projektowanie procesów obróbki,proj,dr inż. Piotr Zyzak,Niestacjonarne Wieczorowe
 EP,Projektowanie procesów obróbki,proj,dr inż. Piotr Zyzak,Stacjonarne
 EP,Seminarium dyplomowe I,sem,prof. UBB dr hab. inż. Jacek Nowakowski,Stacjonarne
 EP,Technologie spajania,wyk,prof. UBB dr hab. inż. Jacek Pezda,Niestacjonarne Wieczorowe
@@ -132,7 +185,11 @@ EP,Termodynamika techniczna,lab,dr inż. Krzysztof Sikora,Niestacjonarne Wieczor
 EP,Termodynamika techniczna,wyk,dr inż. Krzysztof Sikora,Niestacjonarne Wieczorowe
 EP,Termodynamika techniczna,ćw,dr inż. Krzysztof Sikora,Niestacjonarne Wieczorowe
 EP,Wymagania homologacyjne w budowie pojazdów,wyk,dr inż. Henryk Wnęk,Stacjonarne
+EP,Wytrzymałość materiałów I,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Niestacjonarne Wieczorowe
+EP,Wytrzymałość materiałów I,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Stacjonarne
 EP,Wytrzymałość materiałów I,ćw,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
+EP,Wytrzymałość materiałów I,ćw,dr inż. Jerzy Kopeć,Stacjonarne
+EP,Wytrzymałość materiałów III,lab,mgr inż. Mateusz Śliwka,Niestacjonarne Wieczorowe
 EP,Wytrzymałość materiałów III,lab,mgr inż. Mateusz Śliwka,Stacjonarne
 EP,Zasilanie i osprzęt silników,lab,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
 EP,Zasilanie i osprzęt silników,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
@@ -141,19 +198,21 @@ Inf,Algorytmy i struktury danych,lab,dr inż. Elżbieta Sadowska-Owczorz,Stacjon
 Inf,Algorytmy i struktury danych,lab,mgr inż. Dorota Śliwińska,Niestacjonarne
 Inf,Algorytmy i struktury danych,wyk,dr Jacek Mrowiec,Niestacjonarne
 Inf,Algorytmy i struktury danych,wyk,dr Jacek Mrowiec,Stacjonarne
-Inf,Am,wyk,prof. UBB dr hab. Szymon Wąsowicz,Stacjonarne
-Inf,Am,ćw,prof. UBB dr hab. Szymon Wąsowicz,Stacjonarne
+Inf,Analiza macierzowa,wyk,prof. UBB dr hab. Szymon Wąsowicz,Stacjonarne
+Inf,Analiza macierzowa,ćw,prof. UBB dr hab. Szymon Wąsowicz,Stacjonarne
 Inf,Analiza matematyczna II,wyk,dr Dawid Kotrys,Stacjonarne
 Inf,Analiza matematyczna II,ćw,dr Dawid Kotrys,Stacjonarne
 Inf,Analiza matematyczna II,ćw,dr Mirosław Adamek,Stacjonarne
 Inf,Badania operacyjne i optymalizacja,lab,dr inż. Jerzy Marszałek,Niestacjonarne
 Inf,Badania operacyjne i optymalizacja,wyk,dr inż. Jerzy Marszałek,Niestacjonarne
 Inf,Bezpieczeństwo sieci Web,lab,dr inż. Ruslan Shevchuk,Niestacjonarne
+Inf,Bezpieczeństwo sieci Web,wyk,dr inż. Ruslan Shevchuk,Niestacjonarne
 Inf,Bezpieczeństwo systemów serwerowych,lab,dr inż. Tomasz Gancarczyk,Stacjonarne
 Inf,Bezpieczeństwo technologii mobilnych,lab,mgr inż. Olga Veselska,Stacjonarne
+Inf,Bezpieczeństwo technologii mobilnych,wyk,dr inż. Ruslana Ziubina,Stacjonarne
 Inf,Cyfrowe przetwarzanie sygnałów I,wyk,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
-Inf,Dsp(pwjaPsc),lab,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
-Inf,Dsp(pwjaPsc),wyk,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
+Inf,Digital signal processing (przedmiot prowadzony w j. angielskim: Przetwarzanie sygnałów cyfrowych),lab,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
+Inf,Digital signal processing (przedmiot prowadzony w j. angielskim: Przetwarzanie sygnałów cyfrowych),wyk,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
 Inf,Eksploracja zbiorów Big Data,lab,dr inż. Ruslana Ziubina,Niestacjonarne
 Inf,Eksploracja zbiorów Big Data,wyk,dr inż. Ruslana Ziubina,Niestacjonarne
 Inf,Fizyka,wyk,dr Aleksandra Kłos-Witkowska,Niestacjonarne
@@ -165,11 +224,15 @@ Inf,Grafika komputerowa,lab,mgr inż. Mikołaj Grygiel,Stacjonarne
 Inf,Grafika komputerowa,lab,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
 Inf,Grafika komputerowa,lab,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
 Inf,Grafika komputerowa,wyk,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
+Inf,Grafika komputerowa,wyk,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
+Inf,Inteligentne przetwarzanie multimediów,lab,dr Marcin Bernaś,Niestacjonarne
 Inf,Inteligentne przetwarzanie multimediów,wyk,dr Marcin Bernaś,Niestacjonarne
+Inf,Inteligentny transport i pojazdy autonomiczne,lab,dr Marcin Bernaś,Niestacjonarne
 Inf,Inteligentny transport i pojazdy autonomiczne,wyk,dr Marcin Bernaś,Niestacjonarne
 Inf,Interfejs w aplikacjach internetowych,lab,dr Marcin Bernaś,Niestacjonarne
 Inf,Interfejs w aplikacjach internetowych,lab,mgr inż. Patryk Giertuga,Stacjonarne
 Inf,Interfejs w aplikacjach internetowych,lab,mgr inż. Piotr Soszka,Stacjonarne
+Inf,Interfejs w aplikacjach internetowych,wyk,dr Marcin Bernaś,Niestacjonarne
 Inf,Interfejs w aplikacjach internetowych,wyk,dr Marcin Bernaś,Stacjonarne
 Inf,Komunikacja społeczna i aktywizacja zawodowa,wyk,prof. UBB dr hab. inż. Izabela Kutschenreiter-Praszkiewicz,Niestacjonarne
 Inf,Linie i systemy światłowodowe I,wyk,dr inż. Ruslana Ziubina,Niestacjonarne
@@ -177,6 +240,7 @@ Inf,Matematyka dyskretna,wyk,prof. UBB dr hab. inż. Stanisław Zawiślak,Stacjo
 Inf,Matematyka dyskretna,ćw,prof. UBB dr hab. inż. Stanisław Zawiślak,Stacjonarne
 Inf,Matematyka dyskretna II,wyk,dr hab. Wojciech Wieczorek,Niestacjonarne
 Inf,Matematyka dyskretna II,ćw,dr hab. Wojciech Wieczorek,Niestacjonarne
+Inf,Matematyka konkretna,wyk,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
 Inf,Matematyka konkretna,ćw,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
 Inf,Metody probabilistyczne i statystyka,wyk,dr Mirosław Adamek,Stacjonarne
 Inf,Metody probabilistyczne i statystyka,ćw,dr Mirosław Adamek,Stacjonarne
@@ -190,22 +254,26 @@ Inf,Metody sztucznej inteligencji,lab,prof. UBB dr hab. inż. Mirosław Kordos,N
 Inf,Metody sztucznej inteligencji,lab,prof. UBB dr hab. inż. Mirosław Kordos,Stacjonarne
 Inf,Metody sztucznej inteligencji,wyk,prof. UBB dr hab. inż. Mirosław Kordos,Niestacjonarne
 Inf,Metody sztucznej inteligencji,wyk,prof. UBB dr hab. inż. Mirosław Kordos,Stacjonarne
+Inf,Nauka o danych I,lab,dr Joanna Nikodem,Stacjonarne
+Inf,Nauka o danych I,wyk,dr Joanna Nikodem,Stacjonarne
 Inf,Nauka o danych II,lab,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
-Inf,Nbd,lab,mgr inż. Piotr Soszka,Niestacjonarne
-Inf,Nbd,lab,mgr inż. Piotr Soszka,Stacjonarne
+Inf,Nauka o danych II,wyk,prof. dr hab. Vasyl Martsenyuk,Niestacjonarne
 Inf,Nieralacyjne bazy danych,wyk,dr hab. Wojciech Wieczorek,Niestacjonarne
 Inf,Nierelacyjne bazy danych,lab,mgr inż. Olga Veselska,Stacjonarne
+Inf,Nierelacyjne bazy danych,lab,mgr inż. Piotr Soszka,Niestacjonarne
+Inf,Nierelacyjne bazy danych,lab,mgr inż. Piotr Soszka,Stacjonarne
 Inf,Nierelacyjne bazy danych,wyk,dr inż. Paweł Fałat,Stacjonarne
-Inf,NodI,lab,dr Joanna Nikodem,Stacjonarne
-Inf,NodI,wyk,dr Joanna Nikodem,Stacjonarne
-Inf,Ok,lab,dr hab. Wojciech Wieczorek,Stacjonarne
-Inf,Ok,wyk,dr hab. Wojciech Wieczorek,Stacjonarne
+Inf,Optymalizacja kombinatoryczna,lab,dr hab. Wojciech Wieczorek,Stacjonarne
+Inf,Optymalizacja kombinatoryczna,wyk,dr hab. Wojciech Wieczorek,Stacjonarne
+Inf,Podstawy tworzenia gier,lab,dr Marcin Bernaś,Niestacjonarne
+Inf,Podstawy tworzenia gier,wyk,dr Marcin Bernaś,Niestacjonarne
 Inf,Programowanie II,lab,dr hab. Wojciech Wieczorek,Niestacjonarne
 Inf,Programowanie II,lab,dr inż. Paweł Fałat,Stacjonarne
 Inf,Programowanie II,lab,dr inż. Ruslan Shevchuk,Niestacjonarne
 Inf,Programowanie II,lab,dr inż. Ruslan Shevchuk,Stacjonarne
 Inf,Programowanie II,lab,mgr inż. Mikołaj Grygiel,Stacjonarne
 Inf,Programowanie II,lab,mgr inż. Piotr Soszka,Stacjonarne
+Inf,Programowanie II,wyk,dr hab. Wojciech Wieczorek,Niestacjonarne
 Inf,Programowanie II,wyk,dr inż. Paweł Fałat,Stacjonarne
 Inf,Programowanie IV,lab,dr hab. Wojciech Wieczorek,Niestacjonarne
 Inf,Programowanie IV,lab,dr inż. Krzysztof Augustynek,Stacjonarne
@@ -256,36 +324,49 @@ Inf,Systemy operacyjne I,lab,dr inż. Tomasz Gancarczyk,Stacjonarne
 Inf,Systemy operacyjne I,wyk,dr inż. Tomasz Gancarczyk,Niestacjonarne
 Inf,Systemy operacyjne I,wyk,dr inż. Tomasz Gancarczyk,Stacjonarne
 Inf,Systemy rozproszone,lab,dr inż. Krzysztof Augustynek,Niestacjonarne
+Inf,Systemy rozproszone,wyk,dr inż. Krzysztof Augustynek,Niestacjonarne
 Inf,Techniki testowania aplikacji,lab,mgr inż. Maksymilian Grygiel,Stacjonarne
 Inf,Technologie Blockchain,lab,dr inż. Ruslan Shevchuk,Niestacjonarne
+Inf,Technologie Blockchain,wyk,dr inż. Ruslan Shevchuk,Niestacjonarne
 Inf,Teletransmisja II,lab,dr inż. Ruslan Shevchuk,Niestacjonarne
+Inf,Teoria informacji i kodowanie,wyk,dr Jacek Mrowiec,Niestacjonarne
 Inf,Teoria informacji i kodowanie,ćw,dr Jacek Mrowiec,Niestacjonarne
-Inf,Todsc,lab,dr inż. Szymon Tengler,Stacjonarne
-Inf,Todsc,wyk,dr inż. Szymon Tengler,Stacjonarne
+Inf,Tworzenie oprogramowania dla systemów chmurowych,lab,dr inż. Szymon Tengler,Stacjonarne
+Inf,Tworzenie oprogramowania dla systemów chmurowych,wyk,dr inż. Szymon Tengler,Stacjonarne
 Inf,Uczenie maszynowe,lab,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
+Inf,Uczenie maszynowe,wyk,prof. dr hab. Vasyl Martsenyuk,Stacjonarne
 Inf,Wybrane zagadnienia z ochrony własności intelektualnych,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
 Inf,Wzorce projektowe,wyk,dr Łukasz Więcław,Niestacjonarne
 Inf,Wzorce projektowe,wyk,dr Łukasz Więcław,Stacjonarne
-Inf,Zgigk,lab,dr Marcin Bernaś,Stacjonarne
-Inf,Zgigk,wyk,dr Marcin Bernaś,Stacjonarne
-Inf,Zp,wyk,dr Łukasz Więcław,Niestacjonarne
-Inf,Zp,wyk,dr Łukasz Więcław,Stacjonarne
-Inf,Ztp,lab,prof. UBB dr hab. inż. Mirosław Kordos,Stacjonarne
-Inf,Ztp,wyk,prof. UBB dr hab. inż. Mirosław Kordos,Stacjonarne
+Inf,Zaawansowana grafika i gry komputerowe,lab,dr Marcin Bernaś,Stacjonarne
+Inf,Zaawansowana grafika i gry komputerowe,wyk,dr Marcin Bernaś,Stacjonarne
+Inf,Zaawansowane techniki programowania,lab,prof. UBB dr hab. inż. Mirosław Kordos,Stacjonarne
+Inf,Zaawansowane techniki programowania,wyk,prof. UBB dr hab. inż. Mirosław Kordos,Stacjonarne
+Inf,Zarządzania projektem,wyk,dr Łukasz Więcław,Stacjonarne
+Inf,Zarządzanie projektem,wyk,dr Łukasz Więcław,Niestacjonarne
+Inf,Zarządzanie projektem,wyk,dr Łukasz Więcław,Stacjonarne
 Inż mat,Odlewnictwo,lab,dr inż. Aleksandra Jarco,Stacjonarne
 Inż mat,Odlewnictwo,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
 Inż śr,Matematyka,wyk,dr Tomasz Zgraja,Stacjonarne
+Inż śr,Matematyka,ćw,dr Tomasz Zgraja,Niestacjonarne
 Inż śr,Matematyka,ćw,dr Tomasz Zgraja,Stacjonarne
+Inż śr,Matematyka 2,wyk,dr Tomasz Zgraja,Niestacjonarne
+Inż śr,Podstawy termodynamiki technicznej,lab,dr inż. Krzysztof Sikora,Niestacjonarne
+Inż śr,Podstawy termodynamiki technicznej,wyk,dr inż. Krzysztof Sikora,Niestacjonarne
 Kom int,Podstawy informatyki,wyk,dr Aleksandra Kłos-Witkowska,Stacjonarne
 Kom int,Podstawy informatyki,ćw,dr Aleksandra Kłos-Witkowska,Stacjonarne
 Kom int,Wprowadzenie do UX Design,wyk,dr Łukasz Więcław,Stacjonarne
 Kom int,Wprowadzenie do UX Design,ćw,dr Łukasz Więcław,Stacjonarne
 MiBM,Bezpieczeństwo i jakość w procesach wytwórczych,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
+MiBM,Bezpieczeństwo i jakość w procesach wytwórczych,ćw,dr inż. Aleksandra Jarco,Stacjonarne
 MiBM,Drgania mechaniczne,lab,dr inż. Arkadiusz Trąbka,Stacjonarne
 MiBM,Drgania mechaniczne,wyk,dr inż. Jarosław Janusz,Stacjonarne
 MiBM,Dynamika maszyn,lab,prof. UBB dr hab. inż. Andrzej Urbaś,Stacjonarne
+MiBM,Dynamika maszyn,wyk,prof. UBB dr hab. inż. Andrzej Urbaś,Stacjonarne
+MiBM,Eksploatacja i technologia napraw maszyn,lab,mgr inż. Kacper Cieślar,Stacjonarne
 MiBM,Eksploatacja i technologia napraw maszyn,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Stacjonarne
 MiBM,Eksploatacja i technologia napraw maszyn,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
+MiBM,Elektrotechnika i elektronika w zastosowaniach przemysłowych,lab,dr inż. Daniel Jancarczyk,Niestacjonarne Wieczorowe
 MiBM,Elementy sterowania i robotyki,lab,dr inż. Arkadiusz Trąbka,Niestacjonarne Wieczorowe
 MiBM,Elementy sterowania i robotyki,wyk,dr inż. Arkadiusz Trąbka,Niestacjonarne Wieczorowe
 MiBM,Grafika inżynierska II (Rysunek techniczny),proj,dr inż. Marek Praszkiewicz,Niestacjonarne Wieczorowe
@@ -294,6 +375,7 @@ MiBM,Grafika inżynierska II (Rysunek techniczny),wyk,dr inż. Jacek Rysiński,N
 MiBM,Grafika inżynierska II (Rysunek techniczny),wyk,dr inż. Jacek Rysiński,Stacjonarne
 MiBM,Inżynierskie metody optymalizacji,lab,dr inż. Piotr Danielczyk,Stacjonarne
 MiBM,Inżynierskie metody optymalizacji,wyk,dr inż. Piotr Danielczyk,Stacjonarne
+MiBM,Komputerowe wspomaganie konstruowania,proj,prof. UBB dr hab. inż. Ireneusz Wróbel,Stacjonarne
 MiBM,Laboratorium komputerowego wspomagania konstruowania,lab,prof. UBB dr hab. inż. Ireneusz Wróbel,Niestacjonarne Wieczorowe
 MiBM,Matematyka inżynierska II,wyk,dr Mirosław Adamek,Stacjonarne
 MiBM,Matematyka inżynierska II,wyk,dr Tomasz Zgraja,Niestacjonarne Wieczorowe
@@ -306,23 +388,31 @@ MiBM,Mechanika płynów,lab,mgr inż. Ryszard Klecki,Stacjonarne
 MiBM,Mechanika płynów,wyk,dr inż. Jerzy Kopeć,Stacjonarne
 MiBM,Mechanika płynów,ćw,dr inż. Jerzy Kopeć,Stacjonarne
 MiBM,Mechanika płynów I,wyk,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
+MiBM,Mechanika płynów I,ćw,mgr inż. Mateusz Śliwka,Niestacjonarne Wieczorowe
 MiBM,Mechanika techniczna II,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Niestacjonarne Wieczorowe
 MiBM,Mechanika techniczna II,wyk,prof. UBB dr hab. inż. Andrzej Harlecki,Stacjonarne
 MiBM,Mechanika techniczna II,ćw,dr inż. Krzysztof Kubas,Stacjonarne
 MiBM,Mechanika techniczna II,ćw,prof. UBB dr hab. inż. Andrzej Harlecki,Niestacjonarne
+MiBM,Metaloznawstwo II,lab,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Niestacjonarne Wieczorowe
 MiBM,Metaloznawstwo II,lab,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Stacjonarne
 MiBM,Metaloznawstwo II,wyk,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Niestacjonarne Wieczorowe
 MiBM,Metaloznawstwo II,wyk,prof. UBB dr hab. inż. Izabella Rajzer,Stacjonarne
+MiBM,Metoda elementów skończonych,lab,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne Wieczorowe
+MiBM,Metoda elementów skończonych,wyk,prof. UBB dr hab. inż. Andrzej Urbaś,Niestacjonarne Wieczorowe
 MiBM,Metody numeryczne,lab,dr inż. Krzysztof Kubas,Stacjonarne
+MiBM,Metody numeryczne,wyk,dr inż. Krzysztof Kubas,Stacjonarne
 MiBM,Modelowanie komputerowe układów mechatronicznych,lab,prof. UBB dr hab. inż. Andrzej Urbaś,Stacjonarne
 MiBM,Modelowanie wspomagające projektowanie maszyn,lab,dr inż. Piotr Danielczyk,Stacjonarne
 MiBM,Niekonwencjonalne metody wytwarzania,wyk,dr inż. Piotr Zyzak,Niestacjonarne Wieczorowe
 MiBM,Obrabiarki sterowane numerycznie,lab,mgr inż. Kamil Wyrobek,Niestacjonarne Wieczorowe
+MiBM,Obrabiarki sterowane numerycznie,wyk,prof. UBB dr hab. inż. Roman Stryczek,Niestacjonarne Wieczorowe
+MiBM,Obróbka plastyczna,lab,dr inż. Aleksandra Jarco,Stacjonarne
 MiBM,Obróbka plastyczna,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
 MiBM,Obróbka ubytkowa,lab,mgr inż. Izabela Hura,Niestacjonarne Wieczorowe
 MiBM,Obróbka ubytkowa,lab,mgr inż. Izabela Hura,Stacjonarne
 MiBM,Obróbka ubytkowa,wyk,prof. UBB dr hab. inż. Jacek Pezda,Niestacjonarne Wieczorowe
 MiBM,Obróbka ubytkowa,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
+MiBM,Ochrona własności intelektualnej,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne Wieczorowe
 MiBM,Podstawy CAD i modelowanie 3D,lab,dr inż. Piotr Danielczyk,Stacjonarne
 MiBM,Podstawy automatyki i robotyki,lab,dr inż. Jarosław Janusz,Stacjonarne
 MiBM,Podstawy automatyki i robotyki,lab,mgr inż. Marcin Pawlik,Niestacjonarne Wieczorowe
@@ -337,22 +427,32 @@ MiBM,Podstawy konstrukcji maszyn I,wyk,dr inż. Marek Praszkiewicz,Niestacjonarn
 MiBM,Podstawy konstrukcji maszyn II,lab,mgr inż. Ryszard Klecki,Stacjonarne
 MiBM,Podstawy konstrukcji maszyn II,proj,dr inż. Marek Praszkiewicz,Stacjonarne
 MiBM,Podstawy konstrukcji maszyn II,wyk,dr inż. Marek Praszkiewicz,Stacjonarne
+MiBM,Podstawy wspomagania decyzji,wyk,dr inż. Aleksandra Jarco,Stacjonarne
 MiBM,Praca przejściowa,proj,prof. UBB dr hab. inż. Ireneusz Wróbel,Niestacjonarne Wieczorowe
 MiBM,Praca przejściowa,proj,prof. UBB dr hab. inż. Jacek Pezda,Niestacjonarne Wieczorowe
 MiBM,Procesy montażu w przemyśle motoryzacyjnym,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne Wieczorowe
 MiBM,Projektowanie elastycznych systemów produkcyjnych,proj,mgr inż. Kamil Wyrobek,Stacjonarne
+MiBM,Projektowanie elastycznych systemów produkcyjnych,wyk,prof. UBB dr hab. inż. Roman Stryczek,Niestacjonarne Wieczorowe
 MiBM,Projektowanie elastycznych systemów produkcyjnych,wyk,prof. UBB dr hab. inż. Roman Stryczek,Stacjonarne
 MiBM,Projektowanie generatywne,proj,dr inż. Piotr Danielczyk,Stacjonarne
 MiBM,Projektowanie generatywne,proj,mgr inż. Kamil Wyrobek,Stacjonarne
+MiBM,Projektowanie procesów obróbki i montażu,wyk,prof. UBB dr hab. inż. Roman Stryczek,Niestacjonarne Wieczorowe
 MiBM,Projektowanie procesów obróbki i montażu,wyk,prof. UBB dr hab. inż. Roman Stryczek,Stacjonarne
+MiBM,Prowadzenie działalności gospodarczej,wyk,dr inż. Dorota Więcek,Stacjonarne
 MiBM,Seminarium dyplomowe I,sem,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
+MiBM,Seminarium dyplomowe II,sem,prof. UBB dr hab. inż. Ireneusz Wróbel,Niestacjonarne Wieczorowe
 MiBM,Seminarium dyplomowe II,sem,prof. UBB dr hab. inż. Ireneusz Wróbel,Stacjonarne
 MiBM,Statystyka i probabilistyka,wyk,dr Bartosz Micherda,Stacjonarne
 MiBM,Statystyka i probabilistyka,ćw,dr Bartosz Micherda,Stacjonarne
 MiBM,Systemy CAM,lab,mgr inż. Kamil Wyrobek,Stacjonarne
+MiBM,Systemy CAM,wyk,mgr inż. Kamil Wyrobek,Stacjonarne
+MiBM,Systemy SCADA w zarządzaniu produkcją,wyk,dr inż. Marcin Sidzina,Stacjonarne
 MiBM,Systemy pomiarowe,lab,dr inż. Henryk Wnęk,Niestacjonarne Wieczorowe
 MiBM,Systemy pomiarowe,lab,mgr inż. Kacper Cieślar,Niestacjonarne Wieczorowe
+MiBM,Systemy pomiarowe,wyk,prof. UBB dr hab. inż. Jacek Nowakowski,Niestacjonarne Wieczorowe
+MiBM,Systemy pomiarowe,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne Wieczorowe
 MiBM,Systemy wizyjne w wytwarzaniu,lab,mgr inż. Paweł Błaszczak,Stacjonarne
+MiBM,Technologie cyfrowych bliźniaków,proj,dr inż. Marcin Sidzina,Stacjonarne
 MiBM,Technologie proekologiczne,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
 MiBM,Technologie spajania,wyk,prof. UBB dr hab. inż. Jacek Pezda,Niestacjonarne Wieczorowe
 MiBM,Technologie spajania,wyk,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
@@ -361,14 +461,20 @@ MiBM,Termodynamika I,wyk,prof. UBB dr hab. inż. Andrzej Sucheta,Stacjonarne
 MiBM,Termodynamika I,ćw,prof. UBB dr hab. inż. Andrzej Sucheta,Stacjonarne
 MiBM,Termodynamika techniczna I,wyk,prof. UBB dr hab. inż. Andrzej Sucheta,Niestacjonarne Wieczorowe
 MiBM,Termodynamika techniczna I,ćw,prof. UBB dr hab. inż. Andrzej Sucheta,Niestacjonarne Wieczorowe
+MiBM,Transport masy i energii,lab,dr inż. Krzysztof Sikora,Stacjonarne
 MiBM,Transport masy i energii,wyk,prof. UBB dr hab. inż. Andrzej Sucheta,Stacjonarne
+MiBM,Tworzywa sztuczne i materiały ceramiczne,wyk,prof. UBB dr hab. inż. Izabella Rajzer,Niestacjonarne Wieczorowe
 MiBM,Urządzenia pneumatyczne i hydrauliczne,wyk,dr inż. Jerzy Kopeć,Stacjonarne
+MiBM,Urządzenia pneumatyczne i hydrauliczne,ćw,dr inż. Jerzy Kopeć,Stacjonarne
 MiBM,Współczesne materiały inżynierskie,wyk,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Stacjonarne
 MiBM,Wybrane zagadnienia z konstrukcji maszyn,wyk,prof. UBB dr hab. inż. Józef Drewniak,Niestacjonarne Wieczorowe
 MiBM,Wytrzymałość kompozytów i teoria sprężystości,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Stacjonarne
+MiBM,Wytrzymałość materiałów I,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Niestacjonarne Wieczorowe
 MiBM,Wytrzymałość materiałów I,wyk,prof. UBB dr hab. inż. Dorota Pawlus,Stacjonarne
+MiBM,Wytrzymałość materiałów I,ćw,dr inż. Jerzy Kopeć,Niestacjonarne Wieczorowe
 MiBM,Wytrzymałość materiałów I,ćw,prof. UBB dr hab. inż. Dorota Pawlus,Stacjonarne
 MiBM,Wytrzymałość materiałów II,lab,mgr inż. Mateusz Śliwka,Stacjonarne
+MiBM,Zaawansowane systemy CAD,lab,prof. UBB dr hab. inż. Ireneusz Wróbel,Niestacjonarne Wieczorowe
 MiBM,Zarządzanie przedsiębiorstwem,wyk,dr inż. Piotr Zyzak,Niestacjonarne Wieczorowe
 MiBM,Zarządzanie środowiskiem i ekologia,wyk,prof. UBB dr hab. inż. Dariusz Pietras,Niestacjonarne Wieczorowe
 Mt,Języki wysokiego poziomu w mechatronice,lab,dr inż. Marcin Sidzina,Stacjonarne
@@ -384,25 +490,44 @@ Mt,Praca przejściowa,proj,dr inż. Jacek Rysiński,Stacjonarne
 Mt,Praca przejściowa,proj,dr inż. Marcin Sidzina,Stacjonarne
 Mt,Programowalne sterowniki PAC,lab,mgr inż. Ewa Bebek,Stacjonarne
 Mt,Programowalne sterowniki PAC,wyk,mgr inż. Ewa Bebek,Stacjonarne
+Mt,Projektowanie sterowania układów mechatronicznych,lab,mgr inż. Damian Pytka,Stacjonarne
+Mt,Projektowanie sterowania układów mechatronicznych,proj,mgr inż. Damian Pytka,Stacjonarne
 Mt,Przekształtniki energoelektroniczne,wyk,dr inż. Aleksander Patyk,Stacjonarne
+Mt,Przemysł 4.0,proj,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Stacjonarne
 Mt,Przemysł 4.0,wyk,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Stacjonarne
+Mt,Przetworniki pomiarowe w układach mechatronicznych,proj,dr inż. Daniel Jancarczyk,Stacjonarne
+Mt,Przetworniki pomiarowe w układach mechatronicznych,wyk,dr inż. Aleksander Patyk,Stacjonarne
+Mt,Robotyzacja stanowisk mechatronicznych,lab,mgr inż. Adam Jabłoński,Stacjonarne
+Mt,Robotyzacja stanowisk mechatronicznych,lab,mgr inż. Marcin Pawlik,Stacjonarne
 Mt,Robotyzacja stanowisk mechatronicznych,proj,dr inż. Marcin Sidzina,Stacjonarne
 Mt,Robotyzacja stanowisk mechatronicznych,proj,mgr inż. Marcin Pawlik,Stacjonarne
+Mt,Rozpoznawanie obrazów i systemy ekspertowe,lab,mgr inż. Paweł Błaszczak,Stacjonarne
 Mt,Rozpoznawanie obrazów i systemy ekspertowe,wyk,mgr inż. Paweł Błaszczak,Stacjonarne
+Mt,Seminarium dyplomowe I,sem,prof. UBB dr hab. inż. Jacek Pezda,Stacjonarne
 Mt,Sterowanie elektrycznymi układami napędowymi,lab,dr inż. Daniel Jancarczyk,Stacjonarne
+Mt,Sterowanie elektrycznymi układami napędowymi,wyk,dr inż. Aleksander Patyk,Stacjonarne
 Mt,Symulacja procesów zrobotyzowanych,lab,dr inż. Marcin Sidzina,Stacjonarne
 Mt,Symulacja procesów zrobotyzowanych,lab,mgr inż. Marcin Pawlik,Stacjonarne
+Mt,Systemy bezpieczeństwa maszyn i urządzeń,wyk,dr inż. Jarosław Janusz,Stacjonarne
 Mt,Systemy wizualizacji SCADA,lab,mgr inż. Ewa Bebek,Stacjonarne
 Mt,Systemy wizualizacji SCADA,wyk,dr inż. Marcin Sidzina,Stacjonarne
 Mt,Systemy wizualizacji SCADA,wyk,mgr inż. Ewa Bebek,Stacjonarne
 Mt,Systemy wizyjne w wytwarzaniu,lab,mgr inż. Paweł Błaszczak,Stacjonarne
+Mt,Systemy wizyjne w wytwarzaniu,wyk,mgr inż. Paweł Błaszczak,Stacjonarne
+Mt,Układy elektroniczne w mechatronice,lab,mgr inż. Andrzej Masny,Stacjonarne
+Mt,Układy elektroniczne w mechatronice,wyk,mgr inż. Andrzej Masny,Stacjonarne
+Mt,Układy elektroniczne w mechatronice,ćw,mgr inż. Andrzej Masny,Stacjonarne
+Mt,Wspomaganie decyzji w praktyce inżynierskiej,lab,dr inż. Jerzy Marszałek,Stacjonarne
 Mt,Wspomaganie decyzji w praktyce inżynierskiej,wyk,dr inż. Jerzy Marszałek,Stacjonarne
 Mt,Wybrane zagadnienia teorii sterowania,wyk,prof. UBB dr hab. inż. Jacek Kłosiński,Stacjonarne
+Mt,Wybrane zagadnienia teorii sterowania,ćw,mgr inż. Adam Jabłoński,Stacjonarne
+Mt,Wybrane zagadnienia z ochrony własności intelektualnych,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
 Mt,Zintegrowane systemy wytwarzania,wyk,dr inż. Piotr Zyzak,Stacjonarne
-Piel,Sm,lab,dr inż. Krzysztof Sikora,Niestacjonarne
-Piel,Sm,lab,dr inż. Krzysztof Sikora,Stacjonarne
-Piel,Sm,lab,mgr inż. Kacper Cieślar,Niestacjonarne
-Piel,Sm,lab,mgr inż. Kacper Cieślar,Stacjonarne
+PPiW,Bezpieczeństwo i higiena pracy z ergonomią,wyk,prof. UBB dr hab. inż. Dariusz Pietras,Stacjonarne
+Piel,Statystyka medyczna,lab,dr inż. Krzysztof Sikora,Niestacjonarne
+Piel,Statystyka medyczna,lab,dr inż. Krzysztof Sikora,Stacjonarne
+Piel,Statystyka medyczna,lab,mgr inż. Kacper Cieślar,Niestacjonarne
+Piel,Statystyka medyczna,lab,mgr inż. Kacper Cieślar,Stacjonarne
 Trans,BHP i ergonomia,wyk,prof. UBB dr hab. inż. Robert Drobina,Niestacjonarne
 Trans,Drgania mechaniczne,lab,dr inż. Arkadiusz Trąbka,Stacjonarne
 Trans,Elektrotechnika i elektronika,lab,dr Aleksandra Kłos-Witkowska,Niestacjonarne
@@ -416,6 +541,9 @@ ZiIP,Finanse i rachunkowość I,wyk,dr inż. Dorota Więcek,Niestacjonarne
 ZiIP,Finanse i rachunkowość I,wyk,dr inż. Dorota Więcek,Stacjonarne
 ZiIP,Finanse i rachunkowość I,ćw,mgr inż. Ewa Kaczmar-Kolny,Niestacjonarne
 ZiIP,Finanse i rachunkowość I,ćw,mgr inż. Ewa Kaczmar-Kolny,Stacjonarne
+ZiIP,Forecasting and simulation in the enterprise II (przedmiot prowadzony w j. angielskim Prognozowanie i symulacja w przedsiębiorstwie II),proj,dr hab. inż. Luboslav Dulina,Stacjonarne
+ZiIP,Forecasting and simulation in the enterprise II (przedmiot prowadzony w j. angielskim Prognozowanie i symulacja w przedsiębiorstwie II),wyk,dr hab. inż. Luboslav Dulina,Stacjonarne
+ZiIP,Gospodarka magazynowa,proj,mgr inż. Damian Kolny,Niestacjonarne
 ZiIP,Gospodarka magazynowa,proj,mgr inż. Damian Kolny,Stacjonarne
 ZiIP,Gospodarka magazynowa,wyk,dr inż. Dariusz Więcek,Niestacjonarne
 ZiIP,Gospodarka magazynowa,wyk,dr inż. Dariusz Więcek,Stacjonarne
@@ -425,14 +553,16 @@ ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich I,lab,dr inż. S�
 ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich I,lab,dr inż. Sławomir Herma,Stacjonarne
 ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich I,wyk,dr inż. Sławomir Herma,Niestacjonarne
 ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich I,wyk,dr inż. Sławomir Herma,Stacjonarne
+ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich III,lab,dr inż. Sławomir Kukla,Niestacjonarne
 ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich III,lab,dr inż. Sławomir Kukla,Stacjonarne
+ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich III,wyk,dr inż. Sławomir Kukla,Niestacjonarne
 ZiIP,Informatyka i komputerowe wspomaganie prac inżynierskich III,wyk,dr inż. Sławomir Kukla,Stacjonarne
+ZiIP,Komputerowe wspomaganie produkcji,lab,prof. UBB dr hab. inż. Janusz Mleczko,Stacjonarne
+ZiIP,Komputerowe wspomaganie produkcji,wyk,prof. UBB dr hab. inż. Janusz Mleczko,Stacjonarne
 ZiIP,Komputerowe wspomaganie projektowania systemów produkcyjnych,proj,dr inż. Dariusz Więcek,Stacjonarne
 ZiIP,Komputerowe wspomaganie projektowania systemów produkcyjnych,wyk,dr inż. Dariusz Więcek,Stacjonarne
 ZiIP,Kreatywność pracowników i twórcze zespoły,proj,dr inż. Maria Baron-Puda,Stacjonarne
 ZiIP,Kreatywność pracowników i twórcze zespoły,proj,mgr inż. Katarzyna Radwan,Stacjonarne
-ZiIP,Kwp,lab,prof. UBB dr hab. inż. Janusz Mleczko,Stacjonarne
-ZiIP,Kwp,wyk,prof. UBB dr hab. inż. Janusz Mleczko,Stacjonarne
 ZiIP,Marketing,wyk,prof. UBB dr hab. inż. Izabela Kutschenreiter-Praszkiewicz,Niestacjonarne
 ZiIP,Marketing,wyk,prof. UBB dr hab. inż. Izabela Kutschenreiter-Praszkiewicz,Stacjonarne
 ZiIP,Marketing,ćw,mgr inż. Marcin Matuszny,Niestacjonarne
@@ -445,32 +575,35 @@ ZiIP,Metody i techniki twórczego myślenia,lab,mgr inż. Damian Kolny,Niestacjo
 ZiIP,Metody i techniki twórczego myślenia,wyk,dr inż. Aleksander Moczała,Niestacjonarne
 ZiIP,Nauka o materiałach I,lab,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Niestacjonarne
 ZiIP,Nauka o materiałach I,lab,prof. UBB dr hab. inż. Izabella Rajzer,Stacjonarne
+ZiIP,Nauka o materiałach I,wyk,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Niestacjonarne
 ZiIP,Nauka o materiałach I,wyk,prof. UBB dr hab. inż. Izabella Rajzer,Stacjonarne
 ZiIP,Nauka o materiałach I,ćw,prof. UBB dr hab. inż. Dariusz Jędrzejczyk,Niestacjonarne
 ZiIP,Nauka o materiałach I,ćw,prof. UBB dr hab. inż. Izabella Rajzer,Stacjonarne
 ZiIP,Ocena kompetencji pracowniczych - procesy produkcyjne,wyk,dr inż. Maria Baron-Puda,Stacjonarne
+ZiIP,Organizacja systemów produkcyjnych,lab,dr hab. inż. Luboslav Dulina,Stacjonarne
 ZiIP,Organizacja systemów produkcyjnych,lab,mgr inż. Katarzyna Radwan,Stacjonarne
-ZiIP,Osp,lab,dr hab. inż. Luboslav Dulina,Stacjonarne
-ZiIP,Osp,wyk,dr hab. inż. Luboslav Dulina,Stacjonarne
+ZiIP,Organizacja systemów produkcyjnych,wyk,dr hab. inż. Luboslav Dulina,Stacjonarne
 ZiIP,Podstawy metrologii (Metrol. wielk. geom. / Metrol. tech. / Metrol.elek.),lab,mgr inż. Izabela Hura,Niestacjonarne
 ZiIP,Podstawy metrologii (Metrol. wielk. geom. / Metrol. tech. / Metrol.elek.),lab,mgr inż. Izabela Hura,Stacjonarne
 ZiIP,Podstawy projektowania inżynierskiego I,wyk,dr inż. Dariusz Więcek,Niestacjonarne
 ZiIP,Podstawy projektowania inżynierskiego I,wyk,dr inż. Dariusz Więcek,Stacjonarne
 ZiIP,Podstawy projektowania inżynierskiego I,ćw,dr inż. Dariusz Więcek,Niestacjonarne
 ZiIP,Podstawy projektowania inżynierskiego I,ćw,dr inż. Dariusz Więcek,Stacjonarne
-ZiIP,Pp,proj,dr inż. Maria Baron-Puda,Stacjonarne
 ZiIP,Praca przejściowa,proj,dr inż. Aleksander Moczała,Stacjonarne
+ZiIP,Praca przejściowa,proj,dr inż. Maria Baron-Puda,Stacjonarne
 ZiIP,Praca przejściowa,proj,dr inż. Sławomir Kukla,Stacjonarne
 ZiIP,Praca przejściowa,proj,mgr inż. Damian Kolny,Stacjonarne
 ZiIP,Praca przejściowa,proj,mgr inż. Ewa Golińska,Stacjonarne
 ZiIP,Praca przejściowa,proj,mgr inż. Ewa Kaczmar-Kolny,Stacjonarne
 ZiIP,Praca przejściowa,proj,mgr inż. Katarzyna Radwan,Stacjonarne
 ZiIP,Praca przejściowa,proj,mgr inż. Marcin Matuszny,Stacjonarne
+ZiIP,Praca przejściowa,wyk,dr inż. Maria Baron-Puda,Stacjonarne
 ZiIP,Procesy produkcyjne - projektowanie procesów produkcji,proj,dr inż. Sławomir Kukla,Niestacjonarne
 ZiIP,Procesy produkcyjne - projektowanie procesów produkcji,proj,dr inż. Sławomir Kukla,Stacjonarne
 ZiIP,Procesy produkcyjne - projektowanie procesów produkcji,wyk,dr inż. Aleksander Moczała,Niestacjonarne
 ZiIP,Procesy produkcyjne - projektowanie procesów produkcji,wyk,dr inż. Aleksander Moczała,Stacjonarne
 ZiIP,Procesy produkcyjne - projektowanie procesów produkcji,ćw,dr inż. Aleksander Moczała,Niestacjonarne
+ZiIP,Production Engineering (przedmiot prowadzony w języku angielskim),ćw,dr hab. inż. Luboslav Dulina,Niestacjonarne
 ZiIP,Prognozowanie i symulacja w przedsiębiorstwie I,lab,prof. UBB dr hab. inż. Dariusz Plinta,Niestacjonarne
 ZiIP,Prognozowanie i symulacja w przedsiębiorstwie I,wyk,prof. UBB dr hab. inż. Dariusz Plinta,Niestacjonarne
 ZiIP,Projektowanie systemów pracy I,proj,dr inż. Maria Baron-Puda,Niestacjonarne
@@ -487,12 +620,25 @@ ZiIP,Rachunek kosztów dla inżynierów,wyk,dr inż. Dorota Więcek,Niestacjonar
 ZiIP,Rachunek kosztów dla inżynierów,wyk,prof. dr hab. inż. Józef Matuszek,Stacjonarne
 ZiIP,Seminarium dyplomowe I,sem,prof. UBB dr hab. inż. Dariusz Plinta,Niestacjonarne
 ZiIP,Seminarium dyplomowe I,sem,prof. dr hab. inż. Józef Matuszek,Niestacjonarne
+ZiIP,Seminarium dyplomowe I,sem,prof. dr hab. inż. Józef Matuszek,Stacjonarne
+ZiIP,Seminarium dyplomowe II,sem,prof. UBB dr hab. inż. Dariusz Plinta,Stacjonarne
+ZiIP,Systemy pomiarowe,wyk,prof. UBB dr hab. inż. Jacek Nowakowski,Niestacjonarne
+ZiIP,Systemy pomiarowe,wyk,prof. UBB dr hab. inż. Krzysztof Parczewski,Niestacjonarne
 ZiIP,Systemy wspomagania decyzji i zarządzania wiedzą,proj,dr inż. Sławomir Herma,Niestacjonarne
 ZiIP,Systemy wspomagania decyzji i zarządzania wiedzą,wyk,dr inż. Sławomir Herma,Niestacjonarne
+ZiIP,Techniki szybkiego prototypowania,lab,mgr inż. Damian Kolny,Stacjonarne
+ZiIP,Techniki szybkiego prototypowania,wyk,prof. dr hab. inż. Ivan Kuric,Stacjonarne
+ZiIP,Tendencje rozwoju systemów produkcji I - organizacja procesów produkcyjnych,proj,prof. dr hab. inż. Ivan Kuric,Niestacjonarne
+ZiIP,Tendencje rozwoju systemów produkcji I - organizacja procesów produkcyjnych,wyk,prof. dr hab. inż. Ivan Kuric,Stacjonarne
 ZiIP,Tendencje rozwoju systemów produkcji II - procesy wytwarzania,lab,mgr inż. Damian Kolny,Niestacjonarne
 ZiIP,Tendencje rozwoju systemów produkcji II - procesy wytwarzania,wyk,dr inż. Aleksander Moczała,Niestacjonarne
-ZiIP,Trsp-Iopp,proj,prof. dr hab. inż. Ivan Kuric,Niestacjonarne
+ZiIP,Wirtualna i rozszerzona rzeczywistość,proj,mgr inż. Damian Kolny,Stacjonarne
+ZiIP,Wirtualna i rozszerzona rzeczywistość,wyk,prof. UBB dr hab. inż. Dariusz Plinta,Stacjonarne
+ZiIP,Wybrane zagadnienia z ochrony własności intelektualnych,wyk,prof. UBB dr hab. inż. Tomasz Knefel,Stacjonarne
+ZiIP,Zarządzanie bezpieczeństwem pracy,lab,prof. UBB dr hab. inż. Robert Drobina,Stacjonarne
 ZiIP,Zarządzanie bezpieczeństwem pracy,wyk,prof. UBB dr hab. inż. Robert Drobina,Stacjonarne
+ZiIP,Zarządzanie jakością i bezpieczeństwem I,wyk,mgr inż. Ewa Golińska,Niestacjonarne
+ZiIP,Zarządzanie jakością i bezpieczeństwem I,wyk,mgr inż. Ewa Golińska,Stacjonarne
 ZiIP,Zarządzanie jakością i bezpieczeństwem I,ćw,mgr inż. Ewa Golińska,Niestacjonarne
 ZiIP,Zarządzanie jakością i bezpieczeństwem I,ćw,mgr inż. Ewa Golińska,Stacjonarne
 ZiIP,Zarządzanie jakością i bezpieczeństwem III,proj,mgr inż. Ewa Golińska,Stacjonarne
@@ -501,11 +647,18 @@ ZiIP,Zarządzanie jakością i bezpieczeństwem III,wyk,mgr inż. Ewa Golińska,
 ZiIP,Zarządzanie jakością i bezpieczeństwem III,ćw,mgr inż. Ewa Golińska,Niestacjonarne
 ZiIP,Zarządzanie jakością i bezpieczeństwem III,ćw,mgr inż. Ewa Golińska,Stacjonarne
 ZiIP,Zarządzanie procesami w przedsiębiorstwie,lab,dr inż. Dariusz Więcek,Niestacjonarne
+ZiIP,Zarządzanie procesami w przedsiębiorstwie,wyk,dr inż. Dariusz Więcek,Niestacjonarne
 ZiIP,Zarządzanie produkcją i usługami II,lab,mgr inż. Ewa Kaczmar-Kolny,Stacjonarne
 ZiIP,Zarządzanie produkcją i usługami II,proj,mgr inż. Ewa Kaczmar-Kolny,Stacjonarne
 ZiIP,Zarządzanie produkcją i usługami II,wyk,prof. UBB dr hab. inż. Dariusz Plinta,Stacjonarne
 ZiIP,Zarządzanie projektami innowacyjnymi I,lab,mgr inż. Katarzyna Radwan,Niestacjonarne
+ZiIP,Zarządzanie projektami innowacyjnymi I,wyk,dr inż. Aleksander Moczała,Niestacjonarne
+ZiIP,Zarządzanie projektami innowacyjnymi II,lab,dr inż. Sławomir Kukla,Stacjonarne
+ZiIP,Zarządzanie projektami innowacyjnymi II,wyk,dr inż. Sławomir Kukla,Stacjonarne
+ZiIP,Zarządzanie projektem i innowacjami,lab,dr inż. Aleksander Moczała,Stacjonarne
 ZiIP,Zarządzanie projektem i innowacjami,lab,mgr inż. Katarzyna Radwan,Stacjonarne
+ZiIP,Zarządzanie projektem i innowacjami,wyk,dr inż. Aleksander Moczała,Stacjonarne
+ZiIP,Zarządzanie przedsiębiorstwem produkcyjnym,wyk,dr inż. Dorota Więcek,Niestacjonarne
 ZiIP,Zarządzanie strategiczne,wyk,prof. UBB dr hab. inż. Izabela Kutschenreiter-Praszkiewicz,Niestacjonarne
 ZiIP,Zarządzanie strategiczne,ćw,prof. UBB dr hab. inż. Izabela Kutschenreiter-Praszkiewicz,Niestacjonarne
 ZiIP,Zarządzanie systemami pracy,wyk,dr inż. Maria Baron-Puda,Niestacjonarne
@@ -515,9 +668,5 @@ ZiIP,Zarządzanie środowiskowe,ćw,prof. UBB dr hab. inż. Robert Drobina,Niest
 ZiIP,Zarządzanie środowiskowe,ćw,prof. UBB dr hab. inż. Robert Drobina,Stacjonarne
 ZiIP,Zintegrowane systemy zarządzania I,lab,prof. UBB dr hab. inż. Janusz Mleczko,Niestacjonarne
 ZiIP,Zintegrowane systemy zarządzania I,wyk,prof. UBB dr hab. inż. Janusz Mleczko,Niestacjonarne
-ZiIP,ZpiII,lab,dr inż. Sławomir Kukla,Stacjonarne
-ZiIP,ZpiII,wyk,dr inż. Sławomir Kukla,Stacjonarne
-ZiIP,Zpii,lab,dr inż. Aleksander Moczała,Stacjonarne
-ZiIP,Zpii,wyk,dr inż. Aleksander Moczała,Stacjonarne
 Zzl,Statystyka opisowa,wyk,dr Mirosław Adamek,Stacjonarne
 Zzl,Statystyka opisowa,ćw,mgr inż. Dorota Śliwińska,Stacjonarne

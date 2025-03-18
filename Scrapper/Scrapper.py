@@ -4,129 +4,154 @@ import re
 import time
 import csv
 import tempfile
-import requests
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 OUTPUT_FILE = "data/dane.csv"
 LAST_UPDATE = "last_update.txt"
 INTERVAL = 1800  # 30 minut
 
-HEADERS = {"User-Agent": "Mozilla/5.0"}
+# Lista tygodni do sprawdzenia
+WEEKS = ["709", "710", "711"]  # ID tygodni na sztywno
 
-def pobierz_date():
-    """Pobiera datę aktualizacji ze strony."""
-    url = "https://plany.ubb.edu.pl/right_menu.php#"
+def setup_driver():
+    """Konfiguruje i zwraca przeglądarkę Selenium."""
+    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+    wait = WebDriverWait(driver, 15)
+    return driver, wait
+
+def ustaw_tydzien(driver, week_id):
+    """Ustawia określony tydzień w planie zajęć."""
     try:
-        response = requests.get(url, headers=HEADERS)
-        if response.ok:
-            # Szukamy ciągu po "Aktualizacja bazy:" (np. "2025-03-11 12:34:56")
-            match = re.search(r"Aktualizacja bazy:\s*([\d\-]+\s*[\d:]+)", response.text)
+        week_select = driver.find_element(By.ID, "wBWeek")
+        week_option = week_select.find_element(By.CSS_SELECTOR, f"option[value='{week_id}']")
+        driver.execute_script("arguments[0].selected = true;", week_option)
+        
+        show_button = driver.find_element(By.ID, "wBButton")
+        show_button.click()
+        time.sleep(0.5)
+        print(f"    Ustawiono tydzień: {week_id}")
+        return True
+    except Exception as e:
+        print(f"    Nie udało się ustawić tygodnia {week_id}: {e}")
+        return False
 
-            return match.group(0).strip() if match else ""
+def pobierz_date(driver):
+    """Pobiera datę aktualizacji ze strony używając Selenium."""
+    try:
+        driver.get("https://plany.ubb.edu.pl/right_menu.php")
+        time.sleep(1)
+        page_source = driver.page_source
+        match = re.search(r"Aktualizacja bazy:\s*([\d\-]+\s*[\d:]+)", page_source)
+        return match.group(0).strip() if match else ""
     except Exception as e:
         print("Błąd przy pobieraniu daty:", e)
     return ""
 
-def pobierz_katedry():
-    """Pobiera listę identyfikatorów katedr."""
-    url = "https://plany.ubb.edu.pl/left_menu_feed.php?type=2&branch=6168&link=0"
+def pobierz_katedry(driver):
+    """Pobiera listę identyfikatorów katedr używając Selenium."""
     try:
-        response = requests.get(url, headers=HEADERS)
-        if response.ok:
-            return re.findall(r"div_([0-9]+)", response.text)
+        driver.get("https://plany.ubb.edu.pl/left_menu_feed.php?type=2&branch=6168&link=0")
+        time.sleep(1)
+        page_source = driver.page_source
+        return re.findall(r"div_([0-9]+)", page_source)
     except Exception as e:
         print("Błąd przy pobieraniu katedr:", e)
     return []
 
-def pobierz_nauczycieli(katedra_id):
-    """Dla danej katedry pobiera listę ID nauczycieli."""
-    url = f"https://plany.ubb.edu.pl/left_menu_feed.php?type=2&branch={katedra_id}&link=0&bOne=1&iPos=NaN"
+def pobierz_nauczycieli(driver, katedra_id):
+    """Dla danej katedry pobiera listę ID nauczycieli używając Selenium."""
     try:
-        response = requests.get(url, headers=HEADERS)
-        if response.ok:
-            return re.findall(r"plan\.php\?type=10&amp;id=([0-9]+)", response.text)
+        driver.get(f"https://plany.ubb.edu.pl/left_menu_feed.php?type=2&branch={katedra_id}&link=0&bOne=1&iPos=NaN")
+        time.sleep(1)
+        page_source = driver.page_source
+        return re.findall(r"plan\.php\?type=10&amp;id=([0-9]+)", page_source)
     except Exception as e:
         print(f"Błąd przy pobieraniu nauczycieli dla katedry {katedra_id}:", e)
     return []
 
-def pobierz_plan(nauczyciel_id):
-    """Pobiera stronę planu zajęć dla danego nauczyciela."""
+def pobierz_plan(driver, nauczyciel_id, wait):
+    """Pobiera i przetwarza plan zajęć dla danego nauczyciela używając Selenium."""
+    all_records = []
     url = f"https://plany.ubb.edu.pl/plan.php?type=10&id={nauczyciel_id}&winW=1920&winH=1080&loadBG=000000"
+    
     try:
-        response = requests.get(url, headers=HEADERS)
-        if response.ok:
-            return response.text
+        driver.get(url)
+        wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        
+        # Pobierz nazwę nauczyciela
+        title_divs = driver.find_elements(By.CLASS_NAME, "title")
+        full_title = title_divs[-1].text if title_divs else "Nie znaleziono prowadzącego"
+        teacher_match = re.search(r'Plan zajęć - (.*?), tydzień', full_title)
+        teacher_name = teacher_match.group(1) if teacher_match else "Nie znaleziono prowadzącego"
+        
+        # Sprawdź każdy tydzień
+        for week_id in WEEKS:
+            if not ustaw_tydzien(driver, week_id):
+                continue
+            
+            # Sprawdź, czy istnieje legenda
+            legend_exists = driver.find_elements(By.ID, "legend")
+            if not legend_exists:
+                print(f"    Brak legendy w planie dla {teacher_name} (tydzień {week_id}). Pomijam tydzień.")
+                continue
+            
+            # Pobierz legendę i stwórz słownik [kod -> nazwa przedmiotu]
+            legend_element = driver.find_element(By.ID, "legend")
+            legend_html = legend_element.get_attribute("innerHTML")
+            legend_matches = re.findall(r'<strong>([\w\s()/|-]+)</strong>\s*(?:\([^)]*\))?\s*-\s*(.*?)(?:,|<)', legend_html)
+            legend_dict = {abbr.strip().replace("-", ""): full_name.strip() for abbr, full_name in legend_matches}
+            
+            # Pobierz wszystkie bloki zajęć
+            courses = driver.find_elements(By.CSS_SELECTOR, "div[id^='course_']")
+            
+            for course in courses:
+                course_html = course.get_attribute("innerHTML")
+                
+                # Pobierz kod przedmiotu i typ zajęć
+                subject_match = re.search(r'>([\w()/|-]+),\s*(\w+)<br>', course_html)
+                if not subject_match:
+                    continue
+                
+                subject_abbr = subject_match.group(1).strip()
+                course_type = subject_match.group(2).strip()
+                
+                # Znormalizuj kod przedmiotu i pobierz pełną nazwę z legendy
+                normalized_abbr = subject_abbr.replace("-", "")
+                full_subject_name = legend_dict.get(normalized_abbr, subject_abbr)
+                
+                # Pobierz kierunek
+                kierunek_match = re.search(r'<a href=.*?>([\w\sŚśŻżŹźĆćŃńÓóŁłĄąĘę]+?)/', course_html)
+                if not kierunek_match:
+                    continue
+                major = kierunek_match.group(1).strip()
+                if "erasmus" in major.lower():
+                    continue
+                
+                # Ustalenie rodzaju studiów
+                mode = "Nieokreślony"
+                course_lower = course_html.lower()
+                
+                if "niestacjonarne wieczorowe" in course_lower or "nw parzyste" in course_lower or "nw nieparzyste" in course_lower: 
+                    mode = "Niestacjonarne Wieczorowe"
+                elif "s parzyste" in course_lower or "stacjonarne" in course_lower or "s nieparzyste" in course_lower:
+                    mode = "Stacjonarne"
+                elif "nz parzyste" in course_lower or "nz nieparzyste" in course_lower:
+                    mode = "Niestacjonarne"
+                else:
+                    mode = "Niestacjonarne"
+                
+                # Dodaj rekord
+                all_records.append([major, full_subject_name, course_type, teacher_name, mode])
+    
     except Exception as e:
-        print(f"Błąd przy pobieraniu planu dla nauczyciela {nauczyciel_id}:", e)
-    return ""
-
-def przetworz_plan(plan):
-    """
-    Przetwarza stronę planu, wyciągając:
-      - Nazwę nauczyciela (na podstawie nagłówka planu)
-      - Legendę z danymi (fragment HTML zawierający mapowanie kodów na nazwy przedmiotów)
-      - Bloki zawierające informacje o przedmiotach,
-        z których pobierany jest kod przedmiotu, typ zajęć oraz kierunek (major)
-      - Na podstawie legendy ustalana jest pełna nazwa przedmiotu (Subject)
-      - Rodzaj studiów (stacjonarne/zaoczne) na podstawie zawartości bloku
-    Zwraca listę rekordów, gdzie każdy rekord to lista: [Major, Subject, Type, Teacher, Mode].
-    """
-    # Wyciągnięcie nazwy nauczyciela
-    teacher_match = re.search(r"Plan zajęć - (.*),\s*tydzień", plan)
-    teacher_name = teacher_match.group(1).strip() if teacher_match else ""
+        print(f"Błąd przy pobieraniu planu dla nauczyciela {nauczyciel_id}: {e}")
     
-    # Wyciągnięcie legendy
-    legend_match = re.search(r'(<div class="data">.*?<img src="images/resize\.png".*?</div>)', plan, re.DOTALL)
-    legend = legend_match.group(1) if legend_match else ""
-    
-    # Konwersja strony na jeden wiersz i podział na bloki zakończone </div>
-    page_line = plan.replace("\n", " ")
-    blocks = [block for block in re.split(r'</div>', page_line) if '<div id="course_' in block]
-    
-    records = []
-    
-    for block in blocks:
-        # Pobranie informacji o przedmiocie z bloku: szukamy tekstu po <img ...> przed <br
-        course_info_match = re.search(r'<img[^>]*>([^<]*)<br', block)
-        if not course_info_match:
-            continue
-        course_info = course_info_match.group(1).strip()
-        # Usuwamy białe znaki (wszystkie spacje)
-        course_info = re.sub(r'\s+', '', course_info)
-        if not course_info:
-            continue
-        parts = course_info.split(',')
-        course_code = parts[0] if parts else ""
-        course_type = parts[1] if len(parts) > 1 else ""
-        
-        # Pobranie kierunku (major) z bloku
-        major_match = re.search(r'<a href[^>]*>([^/<]*)/', block)
-        if not major_match:
-            continue
-        major = major_match.group(1).strip()
-        if "erasmus" in major.lower():
-            continue
-        # Ustalenie pełnej nazwy przedmiotu na podstawie legendy
-        course_name = course_code  # domyślnie używamy kodu
-        if legend:
-            pattern = rf"<strong>{re.escape(course_code)}</strong>\s*-\s*(.+?)(?:,|<)"
-            course_name_match = re.search(pattern, legend)
-            if course_name_match:
-                course_name = course_name_match.group(1).strip()
-        
-        # Ustalenie rodzaju studiów (stacjonarne/zaoczne)
-       # Ustalenie rodzaju studiów (stacjonarne/zaoczne)
-        mode = "Nieokreślony"
-        block_lower = block.lower()
-
-        # Sprawdzamy najpierw bardziej szczegółowe wzorce
-        if "niestacjonarne wieczorowe" in block_lower or "nw parzyste" in block_lower or "nz parzyste" in block_lower:
-            mode = "Niestacjonarne Wieczorowe"
-        elif "s parzyste" in block_lower or "stacjonarne" in block_lower:
-            mode = "Stacjonarne"
-        else:
-            mode = "Niestacjonarne"
-        records.append([major, course_name, course_type, teacher_name, mode])
-    return records
+    return all_records
 
 def zapisz_dane(dane, current_date):
     """
@@ -157,39 +182,45 @@ def zapisz_dane(dane, current_date):
         print("Błąd przy zapisie danych:", e)
 
 def main():
-    while True:
-        print("Sprawdzam datę aktualizacji...")
-        saved_date = ""
-        if os.path.exists(LAST_UPDATE):
-            try:
-                with open(LAST_UPDATE, "r", encoding="utf-8") as f:
-                    saved_date = f.read().strip()
-            except Exception as e:
-                print("Błąd przy odczycie pliku LAST_UPDATE:", e)
-        
-        current_date = pobierz_date()
-        if not current_date:
-            print("Błąd: Nie udało się pobrać daty aktualizacji.")
-            time.sleep(INTERVAL)
-            continue
-        
-        if os.path.exists(OUTPUT_FILE) and saved_date == current_date:
-            print("Brak zmian. Oczekuję...")
-            time.sleep(INTERVAL)
-            continue
-        
-        print("Zmiana wykryta. Pobieram dane...")
-        all_records = []
-        katedry = pobierz_katedry()
-        for katedra in katedry:
-            nauczyciele = pobierz_nauczycieli(katedra)
-            for nauczyciel in nauczyciele:
-                plan = pobierz_plan(nauczyciel)
-                if plan:
-                    records = przetworz_plan(plan)
+    driver, wait = setup_driver()
+    
+    try:
+        while True:
+            print("Sprawdzam datę aktualizacji...")
+            saved_date = ""
+            if os.path.exists(LAST_UPDATE):
+                try:
+                    with open(LAST_UPDATE, "r", encoding="utf-8") as f:
+                        saved_date = f.read().strip()
+                except Exception as e:
+                    print("Błąd przy odczycie pliku LAST_UPDATE:", e)
+            
+            current_date = pobierz_date(driver)
+            if not current_date:
+                print("Błąd: Nie udało się pobrać daty aktualizacji.")
+                time.sleep(INTERVAL)
+                continue
+            
+            if os.path.exists(OUTPUT_FILE) and saved_date == current_date:
+                print("Brak zmian. Oczekuję...")
+                time.sleep(INTERVAL)
+                continue
+            
+            print("Zmiana wykryta. Pobieram dane...")
+            all_records = []
+            katedry = pobierz_katedry(driver)
+            for katedra in katedry:
+                nauczyciele = pobierz_nauczycieli(driver, katedra)
+                for nauczyciel in nauczyciele:
+                    records = pobierz_plan(driver, nauczyciel, wait)
                     all_records.extend(records)
-        zapisz_dane(all_records, current_date)
-        time.sleep(INTERVAL)
+            zapisz_dane(all_records, current_date)
+            time.sleep(INTERVAL)
+    
+    except KeyboardInterrupt:
+        print("Program przerwany przez użytkownika.")
+    finally:
+        driver.quit()
 
 if __name__ == "__main__":
     main()

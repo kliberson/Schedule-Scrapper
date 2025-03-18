@@ -23,7 +23,6 @@ def filter_lectures_for_teacher_subject(df):
     
     result_df = pd.DataFrame(columns=df.columns)
     
-    # Grupuj dane według nauczyciela i przedmiotu
     grouped = df.groupby(['Teacher', 'Subject'])
     
     for (teacher, subject), group in grouped:
@@ -42,16 +41,12 @@ def index():
     df = load_schedule_data()
     if df.empty:
         return render_template('error.html', error="Nie można wczytać pliku z planem zajęć")
-    
-    # Filtruj dane, aby pokazać tylko wykłady gdy nauczyciel ma kilka typów zajęć z tego samego przedmiotu
     filtered_df = filter_lectures_for_teacher_subject(df)
-    
-    # Przygotuj unikalne wartości dla każdej kolumny
+
     unique_values = {}
     for column in filtered_df.columns:
         unique_values[column] = sorted(filtered_df[column].dropna().unique().tolist())
-    
-    # Kolumny do filtrowania (bez "Mode")
+
     filter_columns = [col for col in filtered_df.columns if col != "Mode"]
     
     return render_template('schedule.html', 
@@ -71,7 +66,6 @@ def get_values(column):
     values = sorted(filtered_df[column].dropna().unique().tolist())
     return jsonify(values)
 
-# Trasa do filtrowania danych
 @app.route('/filter', methods=['POST'])
 def filter_schedule():
     filter_column = request.form.get('filter_column')
@@ -87,15 +81,12 @@ def filter_schedule():
     unique_values = {}
     for column in df.columns:
         unique_values[column] = sorted(df[column].dropna().unique().tolist())
-    
-    # Kolumny do filtrowania (bez "Mode")
+
     filter_columns = [col for col in df.columns if col != "Mode"]
-    
-    # Filtrowanie według trybu studiów, jeśli nie wybrano "wszystkie"
+
     if filter_mode != 'all' and 'Mode' in df.columns:
         df = df[df['Mode'] == filter_mode]
-    
-    # Filtrowanie według wartości w wybranej kolumnie
+
     if filter_column in df.columns and filter_value:
         filtered_df = df[df[filter_column] == filter_value]
         
@@ -133,6 +124,5 @@ if __name__ == '__main__':
         print(f"UWAGA: Plik CSV nie istnieje w ścieżce: {CSV_PATH}")
         print(f"Aplikacja zostanie uruchomiona, ale będzie wyświetlać błąd do czasu utworzenia pliku.")
         print(f"Upewnij się, że ścieżka {os.path.abspath(CSV_PATH)} jest poprawna.")
-    
-    # Uruchom aplikację Flaska
+
     app.run(debug=True, host='0.0.0.0', port=5000)
