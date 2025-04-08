@@ -16,7 +16,7 @@ LAST_UPDATE = "last_update.txt"
 INTERVAL = 1800  # 30 minut
 
 # Lista tygodni do sprawdzenia
-WEEKS = ["709", "710", "711"]  # ID tygodni na sztywno
+WEEKS = ["708", "709", "710"]  # ID tygodni na sztywno
 
 def setup_driver():
     """Konfiguruje i zwraca przeglądarkę Selenium."""
